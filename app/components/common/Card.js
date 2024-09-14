@@ -1,13 +1,20 @@
 import Link from "next/link"
+import Image from "next/image"
 import { TitleSm } from "./Title"
 import { HiOutlineArrowRight } from "react-icons/hi"
 
-const Card = ({data, caption, show, path}) => {
+const Card = ({ data, caption, show, path }) => {
   return (
     <>
       <div className='card'>
         <div className='card-img'>
-          <img src={data.cover} alt={data.title} />
+          <Image
+            src={data.cover}
+            alt={data.title}
+            width={130}
+            height={130}
+            quality={100}
+          />
         </div>
         <div className='card-details'>
           <Link href={`${path}/${data.id}`} className='title-link'>

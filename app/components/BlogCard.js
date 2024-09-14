@@ -1,6 +1,5 @@
 import { blogdata } from "@/assets/data/dummydata"
 import Card from "@/app/components/common/Card"
-import { Title }from "@/app/components/common/Title"
 
 const BlogCard = () => {
   return (

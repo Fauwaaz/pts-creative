@@ -1,5 +1,6 @@
 import { brand } from "@/assets/data/dummydata"
 import { Title } from "./common/Title"
+import Image from "next/image"
 
 const Brand = () => {
   return (
@@ -12,7 +13,13 @@ const Brand = () => {
                 <div className="brand-content grid-6">
                         {brand.map((item) => (
                             <div className="images" key={item.id}>
-                                <img src={item.cover} alt={item.cover} width="100%" height="100%"/>
+                                <Image 
+                                    src={item.cover} 
+                                    alt={item.cover} 
+                                    width={130} 
+                                    height={130}
+                                    quality={100}
+                                />
                             </div>
                         ))}
                 </div>

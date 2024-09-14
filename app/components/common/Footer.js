@@ -4,10 +4,8 @@ import Link from "next/link"
 import { TitleLogo } from "./Title"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
-import { useRouter } from "next/navigation"
 
 const Footer = () => {
-  const router = useRouter()
   const date = new Date()
   const year = date.getFullYear()
   return (

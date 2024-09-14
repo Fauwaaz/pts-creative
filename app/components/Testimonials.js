@@ -3,6 +3,7 @@
 import { Title } from '@/app/components/common/Title'
 import { testimonial } from '@/assets/data/dummydata'
 import Link from 'next/link'
+import Image from 'next/image';
 import { HiOutlineArrowRight } from 'react-icons/hi'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -12,7 +13,7 @@ import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri'
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-        <div className= "slick-arrow">
+        <div className="slick-arrow">
             <button className='next' onClick={onClick}>
                 <RiArrowRightLine />
             </button>
@@ -25,7 +26,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
-        <div className= "slick-arrow">
+        <div className="slick-arrow">
             <button className='prev' onClick={onClick}>
                 <RiArrowLeftLine />
             </button>
@@ -43,7 +44,7 @@ const Testimonials = () => {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         autoplay: true,
-        autoplaySpeed: 2000,    
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 768,
@@ -72,7 +73,13 @@ const Testimonials = () => {
                                     <div className="card">
                                         <div className="image">
                                             <div className="img">
-                                                <img src={user.cover} alt="" />
+                                                <Image
+                                                    src={user.cover}
+                                                    alt={user.cover}
+                                                    width={130}
+                                                    height={130}
+                                                    quality={100}
+                                                />
                                             </div>
                                             <div className="img-text">
                                                 <h3>{user.name}</h3>
