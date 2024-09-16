@@ -14,6 +14,7 @@ const Card = ({ data, caption, show, path }) => {
             width={130}
             height={130}
             quality={100}
+            unoptimized= {true}
           />
         </div>
         <div className='card-details'>

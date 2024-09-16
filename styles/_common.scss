@@ -3,8 +3,8 @@
 
 .title-logo {
   font-size: $xl-6;
-  -webkit-text-stroke: 1px $white;
-  color: transparent;
+  -webkit-text-stroke: 1px $dark;
+  color: $white;
   span {
     font-size: $xl-5;
     -webkit-text-stroke: $blue;
@@ -13,6 +13,7 @@
 }
 .logobg {
   font-size: $xl-7;
+  color: $white;
   span {
     font-size: 45px;
   }
@@ -68,9 +69,17 @@
   padding-bottom: $xl-4;
   p {
     margin: $xl-6 0;
-    color: rgba($white, 0.5);
+    color: rgba($dark, 0.5);
   }
 }
+.white{
+  color: $white;
+}
+
+.grid-6 {
+  justify-items: center;
+}
+
 .card {
   h1 {
     transition: 0.5s;
@@ -100,7 +109,7 @@
     }
   }
   span {
-    color: rgba($white, 0.4);
+    color: rgba($dark, 0.4);
     margin-top: $xl-3;
     display: block;
     letter-spacing: 2px;
@@ -115,7 +124,7 @@
   }
   .title-link {
     display: block !important;
-    color: $white;
+    color: $dark;
     letter-spacing: 0px !important;
     text-transform: capitalize;
   }

@@ -1,11 +1,18 @@
-const Team = () => {
-    return (
-        <>
-            <div className="heading-title">
-            <h1 className="title">Our Team</h1>
-            </div>
-        </>
-    )
+import Team  from "@/sections/Team"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Team | PTS",
+  description: "Digital Marketing Agency",
+  robots: "index, follow"
+};
+
+const team = () => {
+  return (
+    <>
+      <Team />
+    </>
+  )
 }
 
-export default Team
+export default team
