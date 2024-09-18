@@ -6,6 +6,7 @@ import Testimonials from "@/app/components/Testimonials"
 import Showcase from "@/app/components/Showcase"
 import Brand from "@/app/components/Brand" 
 import BlogCard from "@/app/components/BlogCard"
+import TeamScroll from "./TextScroll"
 
 const Home = () => {
   return (
@@ -42,7 +43,8 @@ const Home = () => {
       <Testimonials />
       <Showcase />
       <Brand />
-  
+      <TeamScroll />
+
       <div className="heading-title">
         <Title title="Latest News & Articles" />
       </div>

@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "express": "^4.21.0",
+    "framer-motion": "^11.5.4",
     "lenis": "^1.1.13",
-    "next": "14.2.9",
+    "next": "^14.2.12",
     "next-images": "^1.8.5",
     "react": "^18",
     "react-dom": "^18",
