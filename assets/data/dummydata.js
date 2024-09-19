@@ -5,19 +5,19 @@ import { BiUser } from "react-icons/bi"
 
 export const home = [
   {
-    icon: <AiOutlineCalendar size={25} />,
+    icon: <AiOutlineCalendar size={40} />,
     title: "10+ years of market experience",
   },
   {
-    icon: <TfiRulerPencil size={25} />,
+    icon: <TfiRulerPencil size={40} />,
     title: "Unique technologies & modern approach ",
   },
   {
-    icon: <VscFileSubmodule size={25} />,
-    title: "100+ cuccessful cases in portfolio",
+    icon: <VscFileSubmodule size={40} />,
+    title: "100+ Successful cases in portfolio",
   },
   {
-    icon: <BiUser size={25} />,
+    icon: <BiUser size={40} />,
     title: "Customer satisfaction is our top priority",
   },
 ]

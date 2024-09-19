@@ -78,7 +78,22 @@
     filter: blur(20px);
   }
   .box{
+    transition-property: all;
+    transition-duration: 400ms;
     text-align: center;
+    display: flex;
+    height: 200px;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;  
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 8px 7px  rgba(0, 0, 0, 0.7);
+    &:hover{
+      background: rgba($blue, 0.1);
+      box-shadow: none;
+    }
     .icons {
       color: $blue;
     }
@@ -188,7 +203,7 @@ footer {
   position: relative;
   padding: $xll-3 0 0 0;
   border-top: 1px solid rgba($dark, 0.2);
-  background: #00335f4d;
+  background: #00325e;
   overflow: hidden;
   .logobg {
     line-height: 0;
@@ -200,18 +215,19 @@ footer {
     letter-spacing: 2px;
     font-size: $lg;
     margin-bottom: $xl-6;
+    color: $white;
   }
   span,
   p {
-    color: rgba($dark, 0.5);
+    color: rgba($white, 0.5);
   }
   ul li a {
-    color: rgba($dark, 0.5);
+    color: rgba($white, 0.5);
     transition: 0.5s ease-in-out;
     margin-bottom: $xl-2;
     display: block;
     &:hover {
-      color: $blue;
+      color: $white ;
       text-decoration: underline;
     }
   }
