@@ -1,5 +1,3 @@
-import { blogdata } from "@/assets/data/dummydata"
-
 const SinglePost = ( 
   {
     params
