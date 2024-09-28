@@ -7,6 +7,7 @@ import { BsFacebook } from "react-icons/bs"
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi"
 import { IoLocationOutline } from "react-icons/io5"
 import Link from "next/link";
+import ContactForm from "@/app/components/ContactForm";
 
 const Contact = () => {
   return (
@@ -16,7 +17,7 @@ const Contact = () => {
           <div className='heading-title'>
             <TitleSm title='CONTACT' /> <br />
             <br />
-            <Title title="Let's start right now!" className='title-bg' />
+            <Title title="Let's Start Right Now!" className='title-bg' />
           </div>
           <div className='content py flex1'>
             <div className='left w-30'>
@@ -61,33 +62,7 @@ const Contact = () => {
               <TitleSm title='Make an online enquiry' />
               <p className='desc-p'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
-              <form>
-                <div className='grid-2'>
-                  <div className='inputs'>
-                    <span>Name</span>
-                    <input type='text' />
-                  </div>
-                  <div className='inputs'>
-                    <span>Email</span>
-                    <input type='text' />
-                  </div>
-                </div>
-                <div className='grid-2'>
-                  <div className='inputs'>
-                    <span>your budget</span>
-                    <input type='text' />
-                  </div>
-                  <div className='inputs'>
-                    <span>timeframe</span>
-                    <input type='text' />
-                  </div>
-                </div>
-                <div className='inputs'>
-                  <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
-                  <textarea cols='30' rows='10'></textarea>
-                </div>
-                <button className='button-primary'>Submit</button>
-              </form>
+             <ContactForm />
             </div>
           </div>
         </div>

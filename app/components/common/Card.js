@@ -32,11 +32,11 @@ const Card = ({ data, caption, show, path }) => {
             <div 
               className='card-details'
             >
-              <Link href={`${path}/${data.id}`} className='title-link'>
+              <Link href={`${path}/${data.slug}`} className='title-link'>
                 <TitleSm title={data.title} />
               </Link>
               {caption && (
-                <Link href={`${path}/${data.id}`}>
+                <Link href={`${path}/${data.slug}`}>
                   {caption} <HiOutlineArrowRight className='link-icon' />
                 </Link>
               )}

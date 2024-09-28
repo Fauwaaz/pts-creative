@@ -80,6 +80,27 @@
   justify-items: center;
 }
 
+.errors { 
+  color: red;
+  font-size: 14px;
+  text-transform: capitalize !important;
+  padding: 2px 5px 2px 5px;
+  display: flex;
+  background-color: $white;
+  margin-top: -3px;
+  border-radius: 5px;
+  width: 250px;
+  animation: fade-down 0.5s ease-in-out;
+  z-index: -1;
+}
+
+
+
+@keyframes fade-down {
+  from{transform: translateY(-10px);opacity: 0;}
+  to{transform: translateY(-3px);opacity: 1;}
+}
+
 .card {
   h1 {
     transition: 0.5s;

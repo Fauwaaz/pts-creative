@@ -10,7 +10,7 @@ const Team = () => {
           <div className='heading-title'>
             <TitleSm title='MEET OUR TEAM' /> <br />
             <br />
-            <Title title='A team of smart & passionate creatives' className='title-bg' />
+            <Title title='A Team of Smart & Passsionate Creatives' className='title-bg' />
           </div>
           <div className='grid-4 py'>
             {teamdata.map((item) => (

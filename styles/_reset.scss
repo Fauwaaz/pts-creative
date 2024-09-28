@@ -54,15 +54,18 @@ a {
   color: $dark;
   text-transform: capitalize;
 }
+
+
 textarea,
 input,
 button {
   background: none;
   padding: 0;
   margin: 0;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.37);
   color: $white;
   outline: none;
+  border-radius: 10px 0px 10px 0px;
 }
 .flex {
   display: flex;

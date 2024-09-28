@@ -148,18 +148,22 @@ export const brand = [
 
 export const blogdata = [
   {
-    id: 1,
+    slug: 'ligula-vel-urna-accumsan-placerat',
     title: "Ligula vel urna accumsan placerat",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugit?",
     cover: "/b1.webp",
     category: "INDUSTRY",
     date: "JANUARY 12, 2023",
+    content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id?'
   },
   {
-    id: 2,
+    slug: 'Dont-underestimate-the-lorem-ipsum-dolor-amet',
     title: "Don’t underestimate the lorem ipsum dolor amet",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugit?",
     cover: "/b2.jpg",
     category: "TIPS & TRICKS",
     date: "OCTOBER 20, 2023",
+    content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id? this is second'
   },
   {
     id: 3,
@@ -167,6 +171,7 @@ export const blogdata = [
     cover: "/b3.jpg",
     category: "TIPS & TRICKS",
     date: "OCTOBER 9, 2023",
+    content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id?'
   },
   {
     id: 4,
@@ -174,6 +179,7 @@ export const blogdata = [
     cover: "/b4.jpg",
     category: "EVENTS",
     date: "OCTOBER 8, 2023",
+    content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id?'
   },
 ]
 
