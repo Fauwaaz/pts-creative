@@ -17,8 +17,7 @@ const ContactForm = () => {
       
         setFormData((prevData) => ({
           ...prevData,
-          [id]: value,   
-      
+          [id]: value,       
         }));
       
         const newError = validateField(id, value);
@@ -35,6 +34,8 @@ const ContactForm = () => {
           }));
         }
       };
+
+      const email  = '';
       
       const validateField = (fieldId: string, value: string): string | null => {
         switch (fieldId) {
