@@ -9,7 +9,7 @@ export const TitleLogo = ({ title, caption, className}) => {
     )  
 }
 
-export const TitleSm = ({ title}) => {
+export const TitleSm = ({ title }) => {
     return <h2 className={`titleSm`}>{title}</h2>
 }
 

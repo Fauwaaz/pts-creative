@@ -10,23 +10,70 @@ const ContactForm = () => {
         message: '',
     });
 
+    const [email, setEmail] = useState('');
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { id, value } = e.target;
-
+      
         setFormData((prevData) => ({
-            ...prevData,
-            [id]: value,
+          ...prevData,
+          [id]: value,   
+      
         }));
-
-        if (value.trim()) {
-            setErrors((prevErrors) => ({
-                ...prevErrors,
-                [id]: '',
-            }));
+      
+        const newError = validateField(id, value);
+      
+        if (newError) {
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            [id]: newError,
+          }));
+        } else {
+          setErrors((prevErrors) => ({
+            ...prevErrors,
+            [id]: '',
+          }));
         }
-    };
+      };
+      
+      const validateField = (fieldId: string, value: string): string | null => {
+        switch (fieldId) {
+          case 'name':
+            if (!value.trim()) {
+              return '* Name is Required';
+            } else if (value.length > 20 || value.length < 3) {
+              return value.length > 20 ? "Name should not exceed 20 characters." : "Name should be at least 3 characters long.";
+            }
+            return null;
+          case 'email':
+            if (!value.trim()) {
+              return '* Email is Required';
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+              return 'Email is invalid';
+            }
+            return null; 
+          case 'number':
+            if (!value.trim()) {
+              return '* Number is Required';
+            } else if (value.length !== 10) {
+              return 'Invalid Number';
+            }
+            return null; 
+          case 'industry':
+            if (!value.trim()) {
+              return '* Company name is required';
+            }
+            return null; 
+          case 'message':
+            if (!value.trim()) {
+              return '* Message is required';
+            }
+            return null; 
+          default:
+            return null; 
+        }
+      };
 
     const validateForm = () => {
         const newErrors: { [key: string]: string } = {};
@@ -39,7 +86,7 @@ const ContactForm = () => {
         if (!number.trim()) newErrors.number = "* Number is Required";
         else if (number.length !== 10) newErrors.number = 'Invalid Number';
         if (!industry.trim()) newErrors.industry = "* Company name is required";
-        else if (industry.length !== 10) newErrors.industry = 'Provide genuine company name';
+        else if (industry.length <= 10 || industry.length > 20) newErrors.industry = 'Provide genuine company name';
         if (!message.trim()) newErrors.message = '* Message is required';
 
         setErrors(newErrors);
@@ -134,7 +181,7 @@ const ContactForm = () => {
                         value={formData.message}
                         onChange={handleInputChange}
                     />
-                    {errors.message && <span style={{marginTop:'-10px'}} className='errors'>{errors.message}</span>}
+                    {errors.message && <span style={{marginTop:'-8px'}} className='errors'>{errors.message}</span>}
                 </div>
                 <button type="submit" className='button-primary'>Send</button>
             </form>
