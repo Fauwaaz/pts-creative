@@ -10,7 +10,6 @@ const ContactForm = () => {
         message: '',
     });
 
-    const [email, setEmail] = useState('');
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
