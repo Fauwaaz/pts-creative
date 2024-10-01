@@ -45,14 +45,14 @@ const Card = ({ data, caption, show, path }) => {
               </div>
 
               {show && (
-                <ul>
+                <div>
                   {data.desc.map((text, i) => (
-                    <li key={i}> - {text.text}</li>
+                    <p key={i} className="desc"> - {text.text}</p>
                   ))}
-                </ul>
+                </div>
               )}
             </div>
-          </div>  
+          </div>    
         </motion.div>
     </>
   )

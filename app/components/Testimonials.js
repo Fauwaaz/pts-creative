@@ -64,7 +64,7 @@ const Testimonials = () => {
                 <div className="container">
 
                     <div className="heading-title">
-                        <Title title="What Clients Say About Our Work" />
+                        <Title title="What Our Clients Are Saying" />
                     </div>
                     <div className="cards slider-container">
                         <Slider {...settings}>

@@ -54,11 +54,12 @@
     display: flex;
     justify-content: center;
     .titleSm {
+      font-size: $lg;
       margin: 0 $xl-1;
       font-weight: 400;
     }
     span {
-      font-size: $xll;
+      font-size: $xl-7;
       line-height: 0;
       color: $blue;
     }
@@ -82,7 +83,7 @@
     transition-duration: 400ms;
     text-align: center;
     display: flex;
-    height: 200px;
+    height: 250px;
     border: 1px solid;
     align-items: center;
     justify-content: center;
@@ -100,6 +101,10 @@
   }
 }
 
+.hero-content {
+  margin-top: $xl-2 ;
+}
+
 // expertise
 .expertise {
   .card-img {
@@ -109,7 +114,8 @@
 
 //banner
 .banner {
-  margin-top: $xll-3;
+  margin-top: $xl-6;
+  margin-bottom: $xl-6;
   .container {
     border-radius: 50px 0 50px 0;
     padding: $xll;
@@ -125,7 +131,6 @@
     padding: 20px;
   }
   .cards {
-    margin-top: $xll;
     p {
       margin-bottom: $xl-3;
       font-size: $xl;

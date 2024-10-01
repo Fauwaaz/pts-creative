@@ -1,8 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import {
-  motion,
+import { motion,
   useScroll,
   useSpring,
   useTransform,

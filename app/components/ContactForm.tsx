@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -35,9 +36,28 @@ const ContactForm = () => {
         }
       };
 
-      const email  = '';
-      
-      const validateField = (fieldId: string, value: string): string | null => {
+      const emailRegex = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F]|\\[\x01-\x09\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F])*")@(?:(?:[a-z0-9](?:[a-z0-9-][a-z0-9])*\.)+[a-z0-9](?:[a-z0-9-][a-z0-9])*)|(?:\[(?:(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F]|\\[\x01-\x09\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F])*:)?(?:[a-z0-9-][a-z0-9])*(?:\.[a-z0-9-][a-z0-9])*)\]$/;
+
+    const validateForm = () => {
+        const newErrors: { [key: string]: string } = {};
+        const { name, email, number, industry, message } = formData;
+
+        if (!name.trim()) newErrors.name = "* Name is Required";
+        else if (name.length > 20 || name.length < 3) newErrors.name = name.length > 20 ? "Name should not exceed 20 characters." : "Name should be at least 3 characters long."; 
+        if (!email.trim()) newErrors.email = "* Email is Required";
+        else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = 'Email is invalid';
+        if (!number.trim()) newErrors.number = "* Number is Required";
+        else if (number.length !== 10) newErrors.number = 'Invalid Number';
+        if (!industry.trim()) newErrors.industry = "* Company name is required";
+        else if (industry.length <= 10 || industry.length > 20) newErrors.industry = 'Provide genuine company name';
+        if (!message.trim()) newErrors.message = '* Message is required';
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const validateField = (fieldId: string, value: string): string | null => {
+        const { email } = formData;
         switch (fieldId) {
           case 'name':
             if (!value.trim()) {
@@ -49,7 +69,7 @@ const ContactForm = () => {
           case 'email':
             if (!value.trim()) {
               return '* Email is Required';
-            } else if (!/\S+@\S+\.\S+/.test(email)) {
+            } else if (!emailRegex.test(email)) {
               return 'Email is invalid';
             }
             return null; 
@@ -74,24 +94,6 @@ const ContactForm = () => {
             return null; 
         }
       };
-
-    const validateForm = () => {
-        const newErrors: { [key: string]: string } = {};
-        const { name, email, number, industry, message } = formData;
-
-        if (!name.trim()) newErrors.name = "* Name is Required";
-        else if (name.length > 20 || name.length < 3) newErrors.name = name.length > 20 ? "Name should not exceed 20 characters." : "Name should be at least 3 characters long."; 
-        if (!email.trim()) newErrors.email = "* Email is Required";
-        else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = 'Email is invalid';
-        if (!number.trim()) newErrors.number = "* Number is Required";
-        else if (number.length !== 10) newErrors.number = 'Invalid Number';
-        if (!industry.trim()) newErrors.industry = "* Company name is required";
-        else if (industry.length <= 10 || industry.length > 20) newErrors.industry = 'Provide genuine company name';
-        if (!message.trim()) newErrors.message = '* Message is required';
-
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
-    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();

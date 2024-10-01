@@ -7,14 +7,12 @@ const Banner = () => {
             <section className="banner">
                 <div className="container">
                     <div>
-                        <Title title="We're Looking To Start A New Project..." />
-                        <TitleLogo title="Let's Take Your Business To Next Level!" />
+                        <Title title="Elevate Your Digital Strategy Today!" />
+                        <TitleLogo title="Are you ready to take your marketing to the next level? Our team is here to help." />
                     </div>
-                    <div>
-                        <button className="button-primary">
-                            Request a call back <HiOutlineArrowDownLeft />
-                        </button>
-                    </div>
+                    <button className="button-primary">
+                        Schedule Your Free Consultation Now <HiOutlineArrowDownLeft />
+                    </button>
                 </div>
             </section>
         </>

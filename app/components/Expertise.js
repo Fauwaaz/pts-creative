@@ -8,8 +8,7 @@ const Expertise = () => {
       <section className="expertise">
         <div className="container">
           <div className="heading-title">
-            <Title title="Our Expertise" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at exercitationem quasi placeat.</p>
+            <Title title="Our Comprehensive Services" />
           </div>
           <div className="hero-content grid-4">
             {expertise.map((item, i) => (

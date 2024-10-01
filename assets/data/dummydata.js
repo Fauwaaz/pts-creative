@@ -6,46 +6,74 @@ import { BiUser } from "react-icons/bi"
 export const home = [
   {
     icon: <AiOutlineCalendar size={40} />,
-    title: "10+ years of market experience",
+    title: "Expert Team",
+    description: "Our diverse team of digital marketing specialists brings years of experience and innovative thinking.",
   },
   {
     icon: <TfiRulerPencil size={40} />,
-    title: "Unique technologies & modern approach ",
+    title: "Proven Results",
+    description: "We focus on delivering measurable results. Our methods are rooted in data and analytics."
   },
   {
     icon: <VscFileSubmodule size={40} />,
-    title: "100+ Successful cases in portfolio",
+    title: "Client-Centric Approach",
+    description: "We prioritize your business goals and work collaboratively to help you achieve them."
   },
   {
     icon: <BiUser size={40} />,
-    title: "Customer satisfaction is our top priority",
+    title: "Tailored Solutions",
+    description: "Every business is unique, so we customize our strategies to fit your specific needs and target audience."
   },
 ]
 
 export const expertise = [
   {
     id: 1,
-    title: "Web Design & Development",
-    cover: "/e1.jpg",
-    desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
+    title: "Digital Marketing",
+    cover: "/e2.jpg",
+    desc: [{ text: "Access everything you need to market your business online, all in one place!" }]
   },
   {
     id: 2,
-    title: "Digital Marketing",
-    cover: "/e2.jpg",
-    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
+    title: "Website Development",
+    cover: "/e1.jpg",
+    desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand’s presence on the internet." }],
   },
   {
     id: 3,
-    title: "E-Commerce",
+    title: "Website Design",
     cover: "/e3.jpg",
-    desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
+    desc: [{ text: "Web design encompasses many different skills and disciplines in the production and maintenance of websites." }],
   },
   {
     id: 4,
-    title: "Branding & Creative Services",
+    title: "Mobile App Development",
     cover: "/e4.jpg",
-    desc: [{ text: "Visual identity" }, { text: "Branding for social media" }, { text: "Custom illustrations" }],
+    desc: [{ text: "We'll create a user-friendly app that keeps customers coming back for more." }],
+  },
+  {
+    id: 5,
+    title: "Strategy & Branding",
+    cover: "/e4.jpg",
+    desc: [{ text: "Branding and awareness are two critical components of a successful business or organization’s marketing strategy." }],
+  },
+  {
+    id: 6,
+    title: "Cloud Hosting",
+    cover: "/e4.jpg",
+    desc: [{ text: "This allows for greater scalability, flexibility, and reliability, as the resources of the network can be dynamically allocated to meet the changing needs of the website." }],
+  },
+  {
+    id: 7,
+    title: "Web Hosting",
+    cover: "/e4.jpg",
+    desc: [{ text: "Boost your website's performance with our high-speed servers and optimized infrastructure. Enjoy faster load times and a smoother user experience." }],
+  },
+  {
+    id: 8,
+    title: "Agile Methodology",
+    cover: "/e4.jpg",
+    desc: [{ text: "From product ideation to design, development, release, and maintenance, we help you turn your vision into reality. We deliver strategic product development services for various lines of business by leveraging our years of established experience and expertise." }],
   },
 ]
 
