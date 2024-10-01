@@ -31,7 +31,6 @@ const Header = () => {
             <Link href='/blogs' className={activeLink == "/team" ? "activeLink" : "none"}>Blog</Link>
             <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>Team</Link>            
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>Contact Us</Link>
-            <button className='button-primary'>book a demo</button>
           </nav>
           <button className="menucontrol" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>

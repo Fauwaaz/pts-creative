@@ -13,13 +13,18 @@ const Home = () => {
   return (
     <>
       <section className="hero" >
-        <div className="container">
+        <div className="video-container">
+          <video autoPlay muted loop>
+            <source src="/earth.mp4" type="video/mp4" />
+          </video>
+        </div>  
+        <div className="container home-hero">
           <h1 className="logobg">Unlock Your Business Potential with <br />Premier <span className="blue">Digital Marketing</span> Solutions</h1>
           <div className="sub-heading heading-title white">
             <TitleSm title="WEBSITES" /> <span className="text-accent">.</span>
             <TitleSm title="BRANDING" /> <span>.</span>
             <TitleSm title="DIGITAL MARKETING" />
-          </div><br/>
+          </div><br />
           <Link href="/contact" className="button-primary">Get a Free Website Audit</Link>
         </div>
       </section>
