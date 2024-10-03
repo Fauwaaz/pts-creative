@@ -18,7 +18,7 @@ const Footer = () => {
               </Link>
               <br />
               <span>
-                Get in Touch <br /> Have questions? Interested in our services? We'd love to hear from you!
+                Get in Touch <br /> Have questions? Interested in our services? We&apos;d love to hear from you!
               </span>
               <br />
               <br />
