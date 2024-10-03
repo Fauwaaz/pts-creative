@@ -3,21 +3,16 @@ import { home } from "@/assets/data/dummydata"
 import Expertise from "@/app/components/Expertise"
 import Banner from "@/app/components/Banner"
 import Testimonials from "@/app/components/Testimonials"
-import Showcase from "@/app/components/Showcase"
 import Brand from "@/app/components/Brand"
-import BlogCard from "@/app/components/BlogCard"
-import TeamScroll from "./TextScroll"
+import TextScroll from "./TextScroll"
 import Link from "next/link"
+import Video from "@/app/components/Video"
 
 const Home = () => {
   return (
     <>
       <section className="hero" >
-        <div className="video-container">
-          <video autoPlay muted loop>
-            <source src="/earth.mp4" type="video/mp4" />
-          </video>
-        </div>  
+        <Video />
         <div className="container home-hero">
           <h1 className="logobg">Unlock Your Business Potential with <br />Premier <span className="blue">Digital Marketing</span> Solutions</h1>
           <div className="sub-heading heading-title white">
@@ -38,6 +33,7 @@ const Home = () => {
         </div>
       </section>
       <Expertise />
+      <TextScroll />
       <section className="hero-sec">
         <div className="container">
           <div className="heading-title">
@@ -56,26 +52,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Banner />
-      <Showcase />
       <Brand />
-      <TeamScroll />
       <Testimonials />
 
       <section className="hero-sec">
         <div className="container">
           <div className="heading-title">
             <Title title="Who We Are?" />
-            <p>At PTS Systems & Solutions Pvt. Ltd., we're passionate about helping businesses succeed in the digital realm. Founded on the principles of integrity and innovation, we have curated a team of experts who bring a uniquely holistic approach to digital marketing. Based in India, we are proud to be regarded as one of the top ten digital marketing agencies in Mumbai and Pune.
+            <p>At <strong>PTS Systems & Solutions Pvt. Ltd.</strong>, we're passionate about helping businesses succeed in the digital realm. Founded on the principles of integrity and innovation, we have curated a team of experts who bring a uniquely holistic approach to digital marketing. Based in India, we are proud to be regarded as one of the top ten digital marketing agencies in Mumbai and Pune.
             </p>
           </div>
         </div>
       </section>
 
-      <div className="heading-title">
+      <Banner />
+      {/* <div className="heading-title">
         <Title title="Latest News & Articles" />
       </div>
-      <BlogCard />
+      <BlogCard /> */}
     </>
   )
 }

@@ -3,8 +3,9 @@ header {
   border-bottom: 1px solid rgba($white, 0.2);
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
+  background-color: $white;
   z-index: 999;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.185);
   .container {
     @include flex(center, space-between, none);
     nav {
@@ -20,7 +21,7 @@ header {
 }
 .activeLink {
   position: relative;
-  color: $green;
+  color: #099fed !important;
   &::after {
     content: "";
     position: absolute;
@@ -28,7 +29,7 @@ header {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: $green;
+    background-color: $blue;
   }
 }
 

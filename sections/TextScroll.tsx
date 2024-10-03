@@ -60,10 +60,10 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   );
 } 
 
-export default function TeamScroll() {
+export default function TextScroll() {
   return (
     <section className="brandscroll">
-      <ParallaxText baseVelocity={-5}>PTS CREATIVE</ParallaxText>
+      <ParallaxText baseVelocity={-5}>PTS SYSTEMS & SOLUTIONS</ParallaxText>
       <ParallaxText baseVelocity={5}>GROW YOUR BUSINESS!!</ParallaxText>
     </section>
   );

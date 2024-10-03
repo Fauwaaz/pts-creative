@@ -2,9 +2,7 @@
 
 import { Title } from '@/app/components/common/Title'
 import { testimonial } from '@/assets/data/dummydata'
-import Link from 'next/link'
 import Image from 'next/image';
-import { HiOutlineArrowRight } from 'react-icons/hi'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
@@ -88,7 +86,6 @@ const Testimonials = () => {
                                         </div>
                                         <div className="details">
                                             <p>{user.desc}</p>
-                                            <Link href="/#">VIEW CASE <HiOutlineArrowRight /></Link>
                                         </div>
                                     </div>
                                 </div>
