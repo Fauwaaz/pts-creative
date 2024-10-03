@@ -88,7 +88,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 10px;  
-    border-radius: 40px 0px 40px 0px;
+    border-radius: 10px;
     box-shadow: 8px 7px  rgba(0, 0, 0, 0.7);
     &:hover{
       background: rgba($blue, 0.1);
@@ -113,11 +113,11 @@
 
 //banner
 .banner {
-  margin-top: $xl-6;
-  margin-bottom: $xl-6;
+  margin-top: $xl-3;
+  margin-bottom: $xl-3;
   .container {
-    border-radius: 50px 0 50px 0;
-    padding: $xll;
+    border-radius: 10px;
+    padding: $xl-7;
     background: rgb(192, 90, 255);
     background: $gradient;
     @include flex(center, space-between, none);
@@ -176,6 +176,10 @@
 }
 
 //brand
+.brand {
+  padding: 20px 0px 20px 0px;
+}
+
 .brand-content {
   img {
     opacity: 0.5;
@@ -316,7 +320,7 @@ footer {
       width: 50px;
       height: 50px;
       border: 1px solid rgba($dark, 0.2);
-      border-radius: 10px 0 10px 0;
+      border-radius: 10px;
       @include flex(center, center, none);
     }
     .box {
@@ -333,7 +337,7 @@ footer {
     }
   }
   .right {
-    border-radius: 50px 0 50px 0;
+    border-radius: 10px;
     padding: $xll;
     background: $gradient2;
     form {

@@ -61,8 +61,7 @@ const About = () => {
             </div>
             <div className='right w-60 ml'>
               <TitleSm title='Purpose and Goals' />
-              <br />
-              <p className='misson-p'>At PTS Systems & Solutions, our purpose is to elevate brands by unlocking their potential in the online market. We realize that every business is unique; therefore, we strive to deliver personalized marketing solutions tailored to individual needs. Our goals are to enhance brand visibility, foster customer engagement, and accelerate business growth through effective digital marketing strategies. We envision a future where every business, regardless of its size, can thrive in the digital realm.
+              <p className='desc-p'>At PTS Systems & Solutions, our purpose is to elevate brands by unlocking their potential in the online market. We realize that every business is unique; therefore, we strive to deliver personalized marketing solutions tailored to individual needs. Our goals are to enhance brand visibility, foster customer engagement, and accelerate business growth through effective digital marketing strategies. We envision a future where every business, regardless of its size, can thrive in the digital realm.
               </p>
             </div>
           </div>

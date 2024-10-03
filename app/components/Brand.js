@@ -13,15 +13,14 @@ const Brand = () => {
                 <div className="heading-title">
                     <Title title="WE ARE PROUD TO WORK WITH THESE COMPANIES"/>
                 </div>
-                <div className="brand-content grid-6 justify-items-center">
+                <div className="brand-content grid-5 justify-items-center">
                         {brand.map((item) => (
                             <div className="images" key={item.id}>
-                                <Image 
+                                <Image
+                                    className="brand-img"
                                     src={item.cover} 
                                     alt={item.cover} 
-                                    width={130} 
-                                    height={130}
-                                    quality={100}
+                                    width={100} height={100}
                                 />
                             </div>
                         ))}

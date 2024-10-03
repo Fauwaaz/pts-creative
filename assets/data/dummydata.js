@@ -30,25 +30,25 @@ export const expertise = [
   {
     id: 1,
     title: "Digital Marketing",
-    cover: "/digital-marketing.jpg",
+    cover: "/digital-marketing.webp",
     desc: [{ text: "Access everything you need to market your business online, all in one place!" }]
   },
   {
     id: 2,
-    title: "Website Development",
+    title: "Web Development",
     cover: "/website-development.jfif",
     desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand’s presence on the internet." }],
   },
   {
     id: 3,
-    title: "Website Design",
+    title: "Web Design",
     cover: "/website-design.jpg",
     desc: [{ text: "Web design encompasses many different skills and disciplines in the production and maintenance of websites." }],
   },
   {
     id: 4,
     title: "Mobile App Development",
-    cover: "/Mobile-Apps-Development.png",
+    cover: "/mobiel-app-development.jpg",
     desc: [{ text: "We'll create a user-friendly app that keeps customers coming back for more." }],
   },
   {
@@ -72,7 +72,7 @@ export const expertise = [
   {
     id: 8,
     title: "Agile Methodology",
-    cover: "/agile-methodology.png",
+    cover: "/agile-methodology.jpg",
     desc: [{ text: "From product ideation to design, development, release, and maintenance, we help you turn your vision into reality. We deliver strategic product development services for various lines of business by leveraging our years of established experience and expertise." }],
   },
 ]
@@ -150,28 +150,24 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "/l1.svg",
+    cover: "/JVR.png",
   },
   {
     id: 2,
-    cover: "/l2.svg",
+    cover: "/YQT.png",
   },
   {
     id: 3,
-    cover: "/l3.svg",
+    cover: "/KC.png",
   },
   {
     id: 4,
-    cover: "/l4.svg",
+    cover: "/WIT.png",
   },
   {
     id: 5,
-    cover: "/l5.svg",
-  },
-  {
-    id: 6,
-    cover: "/l6.svg",
-  },
+    cover: "/AGT.png",
+  }
 ]
 
 export const blogdata = [

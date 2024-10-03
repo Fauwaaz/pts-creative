@@ -21,7 +21,6 @@ header {
 }
 .activeLink {
   position: relative;
-  color: #099fed !important;
   &::after {
     content: "";
     position: absolute;

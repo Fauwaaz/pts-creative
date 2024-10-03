@@ -23,7 +23,7 @@
   letter-spacing: 2px;
 }
 .title {
-  font-size: $xl-5;
+  font-size: $xl-6;
   font-weight: 600;
   background: $gradient2;
   background-size: 100%;
@@ -56,13 +56,28 @@
 .secondary-button,
 .button-primary {
   text-transform: capitalize;
-  color: $dark;
+  color: #00335f;
   padding: 13px 40px;
-  background-color: $blue;
+  background-color: $white;
+  border: 1px solid $blue;
   font-size: $md;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: $shadow-md;
+  transition: all 0.3s ease;
   cursor: pointer;
+  &:hover {
+    color: $white;
+    background-color: #00335f;
+    border: 1px solid $white;
+  }
+}
+.brand-img{
+  height: 80px !important;
+  width: auto !important;
+}
+.pts-logo{
+  height: 70px !important;
+  width: auto !important;
 }
 .secondary-button {
   background-color: #171e20;
@@ -141,13 +156,13 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 50px 0 50px 0;
+      border-radius: 10px;
     }
   }
   a {
     display: flex;
     align-items: center;
-    color: $indigo;
+    color: $blue;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: $sm;

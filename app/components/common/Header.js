@@ -21,13 +21,13 @@ const Header = () => {
         <div className='container'>
           <div className='logo'>
             <Link href='/'>
-              <Image
+              <Image className="pts-logo"
                 src='/PTS-Systems-and-Solutions-logo.webp'
                 alt="PTS-Systems-and-Solutions-logo"
                 quality={100}
-                height={65}
-                width={190}
-                unoptimized 
+                height={100}
+                width={100}
+                unoptimized = {true} 
               />
             </Link>
           </div>

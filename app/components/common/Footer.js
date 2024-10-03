@@ -4,6 +4,13 @@ import Link from "next/link"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 
+const TextStyle = {
+  fontSize: "16px",
+  color: "#fff",
+  textTransform: "none",
+  marginBottom: "10px"
+}
+
 const Footer = () => {
   const date = new Date()
   const year = date.getFullYear()
@@ -88,17 +95,17 @@ const Footer = () => {
                 </li>
                 
               </div>
-              <h3>+91 9136477352</h3>
-              <Link href="mailto:info@ptssystems.co.in"><h3>info@ptssystems.co.in</h3></Link>
+              <Link href="tel:+919136477352"><h5 style={TextStyle}>+91 9136477352</h5></Link>
+              <Link href="mailto:info@ptssystems.co.in"><h5 style={TextStyle}>info@ptssystems.co.in</h5></Link>
               <p style={{ fontSize: "14px", marginBottom: "10px" }}>Address: Unit 1, Building, no. 2, Millenium Business Park, MIDC Industrial Area, Sector 1, Mahape, Navi Mumbai, Maharashtra 400710</p>
             </ul>
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© {year} PTS CREATIVE. ALL RIGHTS RESERVED.</span>
+              <span>© {year} PTS SYSTEMS & SOLUTIONS. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
-              <span>PTS SYSTEMS & SOLUTIONS</span>
+              <span>PRIVACY POLICY</span>
               <span> &nbsp; | &nbsp; </span>
               <span>TERMS & CONDITIONS</span>
             </div>
