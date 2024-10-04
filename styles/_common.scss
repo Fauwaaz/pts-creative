@@ -71,6 +71,21 @@
     border: 1px solid $white;
   }
 }
+.flex {
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+}
+.loading{
+  color: $blue;
+  font-weight: 600;
+  font-size: 25px;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .button-secondary{
   text-transform: capitalize;
   color: $white;

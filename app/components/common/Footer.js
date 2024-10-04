@@ -40,34 +40,34 @@ const Footer = () => {
                 <Link href='/services'>Showcase</Link>
               </li>
               <li>
-                <Link href='contact'>Contact</Link>
+                <Link href='/contact'>Contact</Link>
               </li>
             </ul>
             <ul>
               <h3>SERVICES</h3>
               <li>
-                <Link href='/'>Digital Marketing</Link>
+                <Link href='/services/digital-marketing'>Digital Marketing</Link>
               </li>
               <li>
-                <Link href='/'>Website Development</Link>
+                <Link href='/services/website-development'>Website Development</Link>
               </li>
               <li>
-                <Link href='/'>Website Design</Link>
+                <Link href='/services/website-design'>Website Design</Link>
               </li>
               <li>
-                <Link href='/'>Mobile App Development</Link>
+                <Link href='/services/mobile-app-development'>Mobile App Development</Link>
               </li>
               <li>
-                <Link href='/'>Strategy & Branding</Link>
+                <Link href='/services/strategy-and-branding'>Strategy & Branding</Link>
               </li>
               <li>
-                <Link href='/'>Cloud Hosting</Link>
+                <Link href='/services/cloud-hosting'>Cloud Hosting</Link>
               </li>
               <li>
-                <Link href='/'>Web Hosting</Link>
+                <Link href='/services/web-hosting'>Web Hosting</Link>
               </li>
               <li>
-                <Link href='/'>Agile Methodology</Link>
+                <Link href='/services/agile-methodology'>Agile Methodology</Link>
               </li>
             </ul>
             <ul>

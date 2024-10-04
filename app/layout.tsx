@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   robots: "index, follow"
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
