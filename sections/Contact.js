@@ -58,8 +58,8 @@ const Contact = () => {
               </ul>
             </div>
             <div className='right w-70'>
-              <TitleSm title='Make an online enquiry' />
-              <p className='desc-p'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
+              <h3 style={{fontSize: "30px", fontWeight: "600", letterSpacing:"2px"}}>Make an online enquiry</h3>
+              <p className='desc'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
              <ContactForm />
             </div>

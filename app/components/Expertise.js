@@ -1,8 +1,8 @@
-import { expertise } from "@/assets/data/dummydata"
+import { services } from "@/assets/data/dummydata"
 import { Title } from "./common/Title"
 import Card from "@/app/components/common/Card"
 
-const Expertise = () => {
+const Services = () => {
   return (
     <>
       <section className="expertise">
@@ -11,9 +11,9 @@ const Expertise = () => {
             <Title title="Our Comprehensive Services" />
           </div>
           <div className="hero-content grid-4">
-            {expertise.map((item, i) => (
+            {services.map((item, i) => (
               <div className="box" key={i}>
-                <Card data={item} key={item.i} caption="Learn more" />
+                <Card data={item} key={item.i} caption="Learn more" path="services"/>
               </div>
             ))}
           </div>
@@ -23,4 +23,4 @@ const Expertise = () => {
   )
 }
 
-export default Expertise
+export default Services

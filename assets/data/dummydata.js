@@ -26,52 +26,60 @@ export const home = [
   },
 ]
 
-export const expertise = [
+export const services = [
   {
-    id: 1,
+    slug: "digital-marketing",
     title: "Digital Marketing",
+    description: "Digital Marketing",
     cover: "/digital-marketing.webp",
     desc: [{ text: "Access everything you need to market your business online, all in one place!" }]
   },
   {
-    id: 2,
+    slug: "web-development",
     title: "Web Development",
+    description: "Webdevelopment",
     cover: "/website-development.jfif",
-    desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand’s presence on the internet." }],
+    desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
   },
   {
-    id: 3,
+    slug: "web-design",
     title: "Web Design",
+    description: "Web Design",
     cover: "/website-design.jpg",
     desc: [{ text: "Web design encompasses many different skills and disciplines in the production and maintenance of websites." }],
   },
   {
-    id: 4,
+    slug: "mobile-app-development",
     title: "Mobile App Development",
+    description: "Mobile App Development",
     cover: "/mobiel-app-development.jpg",
     desc: [{ text: "We'll create a user-friendly app that keeps customers coming back for more." }],
   },
   {
-    id: 5,
+    slug: "strategy-and-branding",
     title: "Strategy & Branding",
+    description: "Strategy & Branding",
     cover: "/Branding-Strategy.jpg",
-    desc: [{ text: "Branding and awareness are two critical components of a successful business or organization’s marketing strategy." }],
+    desc: [{ text: "Branding and awareness are two critical components of a successful business or organization's marketing strategy." }],
   },
   {
-    id: 6,
+    slug: "cloud-hosting",
     title: "Cloud Hosting",
+    description: "Cloud Hosting",
     cover: "/cloud-hosting.jpg",
     desc: [{ text: "This allows for greater scalability, flexibility, and reliability, as the resources of the network can be dynamically allocated to meet the changing needs of the website." }],
   },
   {
-    id: 7,
+    slug: "web-hosting",
     title: "Web Hosting",
+    description: "Web Hosting",
     cover: "/web-hosting.webp",
     desc: [{ text: "Boost your website's performance with our high-speed servers and optimized infrastructure. Enjoy faster load times and a smoother user experience." }],
   },
   {
-    id: 8,
+    slug: "agile-methodology",
     title: "Agile Methodology",
+    description: "Agile Methodology",
     cover: "/agile-methodology.jpg",
     desc: [{ text: "From product ideation to design, development, release, and maintenance, we help you turn your vision into reality. We deliver strategic product development services for various lines of business by leveraging our years of established experience and expertise." }],
   },
@@ -182,7 +190,7 @@ export const blogdata = [
   },
   {
     slug: 'Dont-underestimate-the-lorem-ipsum-dolor-amet',
-    title: "Don’t underestimate the lorem ipsum dolor amet",
+    title: "Don't underestimate the lorem ipsum dolor amet",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugit?",
     cover: "/b2.jpg",
     category: "TIPS & TRICKS",
@@ -190,16 +198,18 @@ export const blogdata = [
     content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id? this is second'
   },
   {
-    id: 3,
+    slug: "building-the-real-vr-lorem-ipsum-dolor-amet-glavrida-from-a-scratch",
     title: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
+    description: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
     cover: "/b3.jpg",
     category: "TIPS & TRICKS",
     date: "OCTOBER 9, 2023",
     content: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum voluptates asperiores itaque totam iusto in assumenda obcaecati. Libero dolore modi veniam at, soluta sapiente rerum nemo ab sint temporibus? Soluta corporis nobis, officia sed sapiente dolor nulla vero, aliquam at, harum debitis commodi? Odio excepturi laudantium optio cumque id?'
   },
   {
-    id: 4,
+    slug: "what-eleifend-posuere-tincidunt",
     title: "What eleifend posuere tincidunt",
+    description: "What eleifend posuere tincidunt",
     cover: "/b4.jpg",
     category: "EVENTS",
     date: "OCTOBER 8, 2023",

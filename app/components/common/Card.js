@@ -35,11 +35,11 @@ const Card = ({ data, caption, show, path }) => {
               <Link href={`${path}/${data.slug}`} className='title-link'>
                 <TitleSm title={data.title} />
               </Link>
-              {caption && (
+                {caption && ( 
                 <Link href={`${path}/${data.slug}`}>
                   {caption} <HiOutlineArrowRight className='link-icon' />
                 </Link>
-              )}
+                )}
               <div className='flex'>
                 <span> {data.category} {data.post}</span> {data.date && <span> / {data.date}</span>}
               </div>

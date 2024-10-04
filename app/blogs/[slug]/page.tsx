@@ -5,9 +5,7 @@ const SinglePost = (
   params: {slug: string, cover: string}
 }) => {
   return (
-    <>
       <div>Blog: {params.slug}</div>
-    </>
   )
 }
 

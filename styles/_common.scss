@@ -71,8 +71,25 @@
     border: 1px solid $white;
   }
 }
+.button-secondary{
+  text-transform: capitalize;
+  color: $white;
+  padding: 13px 40px;
+  background-color: #00335f;
+  border: 1px solid $white;
+  font-size: $md;
+  border-radius: 10px;
+  box-shadow: $shadow-md;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    color: #00335f;
+    background-color: $white;
+    border: 1px solid $blue;
+  }
+} 
 .brand-img{
-  height: 80px !important;
+  height: 90px !important;
   width: auto !important;
 }
 .pts-logo{

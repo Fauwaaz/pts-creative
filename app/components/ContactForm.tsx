@@ -179,13 +179,13 @@ const ContactForm = () => {
                     <textarea
                         id="message"
                         cols={30}
-                        rows={10}
+                        rows={3}
                         value={formData.message}
                         onChange={handleInputChange}
                     />
                     {errors.message && <span style={{marginTop:'-8px'}} className='errors'>{errors.message}</span>}
                 </div>
-                <button type="submit" className='button-primary'>Send</button>
+                <button type="submit" className='button-secondary'>Send</button>
             </form>
         </>
     );
