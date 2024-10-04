@@ -2,7 +2,7 @@
 
 function Loading() {
   return (
-    <div className='flex pb-4'>
+    <div style={{height: "85vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
        <span className="loading">Loading...</span>
     </div>
   );
