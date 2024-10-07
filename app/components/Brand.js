@@ -11,7 +11,7 @@ const Brand = () => {
         <section className="brand" style={styling}> 
             <div className="container">
                 <div className="heading-title">
-                    <Title title="WE ARE PROUD TO WORK WITH THESE COMPANIES"/>
+                    <h3 className="title-logo">WE ARE PROUD TO WORK WITH THESE COMPANIES</h3>
                 </div>
                 <div className="brand-content grid-5 justify-items-center">
                         {brand.map((item) => (

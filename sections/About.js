@@ -23,16 +23,16 @@ const About = () => {
               </p>
               <div className='grid-3'>
                 <div className='box'>
-                  <h1 className='blue'>10+</h1>
-                  <h3>Years of experience</h3>
+                  <h3 className='title'>10+</h3>
+                  <h4>Years of experience</h4>
                 </div>
                 <div className='box'>
-                  <h1 className='blue'>50+</h1>
-                  <h3>Successful cases</h3>
+                  <h3 className='title'>50+</h3>
+                  <h4>Successful cases</h4>
                 </div>
                 <div className='box'>
-                  <h1 className='blue'>12+</h1>
-                  <h3>Industry awards</h3>
+                  <h3 className='title'>12+</h3>
+                  <h4>Industry awards</h4>
                 </div>
               </div>
             </div>
@@ -41,8 +41,8 @@ const About = () => {
                 className="round"
                 src={'/s1.jpg'}
                 alt={'/s1.jpg'}
-                width={450}
-                height={450}
+                width={350}
+                height={350}
                 quality={100}
               />
             </div>
@@ -54,8 +54,8 @@ const About = () => {
                 className="round"
                 src={'/s4.jpg'}
                 alt={'/s4.jpg'}
-                width={450}
-                height={450}
+                width={350}
+                height={350}
                 quality={100}
               />
             </div>

@@ -34,19 +34,21 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
     }
 
     return (
-        <div className="container">
-            <Image 
-                className="rounded-lg"
-                src={service.cover}
-                width={600}
-                height={450}
-                alt={service.title}
-                unoptimized={true}
-            />
-            <h1 className="">{service.title}</h1>
-            {service.desc.map((text, i) => (
-                <p key={i} className="desc"> - {text.text}</p>
-            ))}
+        <div className="hero-sec">
+            <div className="container">
+                <Image
+                    className="rounded-lg"
+                    src={service.cover}
+                    width={600}
+                    height={450}
+                    alt={service.title}
+                    unoptimized={true}
+                />
+                <h1 className="">{service.title}</h1>
+                {service.desc.map((text, i) => (
+                    <p key={i} className="desc"> - {text.text}</p>
+                ))}
+            </div>
         </div>
     );
 };

@@ -2,7 +2,6 @@
 
 .title-logo {
   font-size: $xl-6;
-  -webkit-text-stroke: 1px $dark;
   color: $white;
   span {
     font-size: $xl-5;
@@ -51,7 +50,7 @@
   object-fit: cover;
 }
 .home-hero{
-  padding-top: $xl-7;
+  padding-top: $xll-2;
 }
 .secondary-button,
 .button-primary {
@@ -61,6 +60,7 @@
   background-color: $white;
   border: 1px solid $blue;
   font-size: $md;
+  font-weight: 600;
   border-radius: 10px;
   box-shadow: $shadow-md;
   transition: all 0.3s ease;
@@ -84,6 +84,7 @@
   border: 1px solid $white;
   font-size: $md;
   border-radius: 10px;
+  font-weight: 500;
   box-shadow: $shadow-md;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -107,6 +108,7 @@
   color: $white;
   padding: 20px 60px;
   font-size: $lg;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: rgba($dark, 5) 0px 7px 29px 0px;
@@ -213,7 +215,10 @@
     text-transform: capitalize;
   }
 }
-
+.slick-slide {  
+  border-radius: 10px;
+  border: 1px solid #00335f; 
+}
 .slick-arrow .next,
 .slick-arrow .prev {
   position: absolute;
@@ -233,10 +238,24 @@
 .slick-arrow .prev {
   left: -50px;
 }
+.slick-slider .slick-track, .slick-slider .slick-list {
+  display: flex;
+  gap: 10px;  
+}
 .slick-slider {
-  margin: 0 -15px;
+  padding: 10px;
 }
 @media screen and (max-width: 800px) {
+  .logobg {
+    font-size: $xl-4;
+    margin-top: 50px;
+    span {
+      font-size: $xl-4;
+    }
+  }
+  .hero .sub-heading .titleSm{
+    font-size: 14px !important;
+  }
   .slick-arrow .next {
     top: 0;
     right: 0;
@@ -247,6 +266,6 @@
   }
   .heading-title {
     max-width: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
   }
 }

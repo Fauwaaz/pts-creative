@@ -117,10 +117,13 @@
   margin-bottom: $xl-3;
   .container {
     border-radius: 10px;
-    padding: $xl-7;
+    padding: $xl-3;
     background: rgb(192, 90, 255);
     background: $gradient;
     @include flex(center, space-between, none);
+  }
+  .banner-content{
+    max-width: 70%;
   }
 }
 
@@ -139,12 +142,12 @@
       @include flex(center, none, none);
       margin-bottom: $xl-4;
       .img {
-        width: $xll-3;
-        height: $xll-3;
+        width: 100px;
+        height: auto;
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          width: 90px;
+          height: auto;
+          object-fit: contain;
           border-radius: 50%;
         }
       }
@@ -176,16 +179,16 @@
 }
 
 //brand
-.brand {
+.brand {  
   padding: 20px 0px 20px 0px;
 }
 
 .brand-content {
   img {
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s ease-in-out;
     &:hover {
-      opacity: 1;
+      transform: scale(1.1);
       cursor: pointer;
     }
   }
@@ -377,16 +380,24 @@ footer {
 @media screen and (max-width: 800px) {
   .banner {
     .container {
+      margin: 0 10px;
       @include flex(center, none, column);
+      .banner-content{
+        max-width: 100%;
+      }
       button {
-        margin-top: 50px;
+        margin-top: 40px;
       }
       h1 {
         font-size: 30px;
       }
+      h4{
+        font-size: $xl-3;
+      }
     }
   }
 
+  
   .contact {
     .right {
       padding: $xl-3;

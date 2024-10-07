@@ -36,13 +36,13 @@ const Testimonials = () => {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 2,
+        arrow: false,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        nextArrow: false,
+        prevArrow: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1500,
         responsive: [
             {
                 breakpoint: 768,
@@ -74,8 +74,8 @@ const Testimonials = () => {
                                                 <Image
                                                     src={user.cover}
                                                     alt={user.cover}
-                                                    width={130}
-                                                    height={130}
+                                                    width={100}
+                                                    height={70}
                                                     quality={100}
                                                 />
                                             </div>
