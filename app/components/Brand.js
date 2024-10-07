@@ -1,5 +1,4 @@
 import { brand } from "@/assets/data/dummydata"
-import { Title } from "./common/Title"
 import Image from "next/image"
 
 const Brand = () => {

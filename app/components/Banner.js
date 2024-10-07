@@ -1,5 +1,5 @@
 import { HiOutlineArrowDownLeft } from "react-icons/hi2"
-import { Title, TitleLogo } from "./common/Title"
+import { TitleLogo } from "./common/Title"
 
 
 

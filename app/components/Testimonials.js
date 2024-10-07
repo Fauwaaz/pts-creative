@@ -6,31 +6,31 @@ import Image from 'next/image';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri'
+// import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri'
 
-function SampleNextArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="slick-arrow">
-            <button className='next' onClick={onClick}>
-                <RiArrowRightLine />
-            </button>
-        </div>
-    );
-}
+// function SampleNextArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="slick-arrow">
+//             <button className='next' onClick={onClick}>
+//                 <RiArrowRightLine />
+//             </button>
+//         </div>
+//     );
+// }
 
 
 
-function SamplePrevArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="slick-arrow">
-            <button className='prev' onClick={onClick}>
-                <RiArrowLeftLine />
-            </button>
-        </div>
-    );
-}
+// function SamplePrevArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="slick-arrow">
+//             <button className='prev' onClick={onClick}>
+//                 <RiArrowLeftLine />
+//             </button>
+//         </div>
+//     );
+// }
 
 const Testimonials = () => {
     var settings = {
