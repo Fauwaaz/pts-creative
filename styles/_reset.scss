@@ -18,7 +18,7 @@ body {
 
 .parallax {
   overflow: hidden;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   line-height: 0.8;
   margin-bottom: 15px;
   white-space: nowrap;
@@ -31,12 +31,12 @@ body {
   text-transform: uppercase;
   // font-family: "Plaster", system-ui;
   font-family: 'Poppins', sans-serif;
-  font-size: 64px;
+  font-size: 45px;
   display: flex;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  -webkit-text-stroke: 2px $white;
+  -webkit-text-stroke: 1px $white;
   color: transparent;
 }
 
@@ -48,7 +48,7 @@ body {
 .brandscroll{
   background-color: #00335F;
   margin-top: 60px;
-  padding: 20px 0px 20px 0px;
+  padding: 35px 0px 20px 0px;
 }
 
 a {

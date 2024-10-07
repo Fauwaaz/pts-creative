@@ -13,6 +13,7 @@
   font-size: $xl-7;
   color: $white;
   span {
+    color: #00a8ff;
     font-size: 45px;
   }
 }
@@ -50,7 +51,7 @@
   object-fit: cover;
 }
 .home-hero{
-  padding-top: $xll-2;
+  padding-top: 10% !important;
 }
 .secondary-button,
 .button-primary {
@@ -95,7 +96,7 @@
   }
 } 
 .brand-img{
-  height: 90px !important;
+  height: 100px !important;
   width: auto !important;
 }
 .pts-logo{

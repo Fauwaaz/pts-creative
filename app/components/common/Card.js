@@ -4,19 +4,19 @@ import Link from "next/link"
 import Image from "next/image"
 import { TitleSm } from "./Title"
 import { HiOutlineArrowRight } from "react-icons/hi"
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
+// import { motion, useInView } from "framer-motion"
+// import { useRef } from "react"
 
 const Card = ({ data, caption, show, path }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { triggerOnce: false })
+  // const ref = useRef(null)
+  // const isInView = useInView(ref, { triggerOnce: false })
   return (
     <>
-        <motion.div 
-                ref={ref}
-                initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.8, y: 50 }}
-                transition={{ duration: 0.5 }}
+        <div 
+                // ref={ref}
+                // initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                // animate={isInView ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.8, y: 50 }}
+                // transition={{ duration: 0.5 }}
           >
           <div className='card'>
             <div className='card-img'>
@@ -53,7 +53,7 @@ const Card = ({ data, caption, show, path }) => {
               )}
             </div>
           </div>    
-        </motion.div>
+        </div>
     </>
   )
 }

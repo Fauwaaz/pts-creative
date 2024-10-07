@@ -120,7 +120,7 @@
     padding: $xl-3;
     background: rgb(192, 90, 255);
     background: $gradient;
-    @include flex(center, space-between, none);
+    @include flex(center, space-evenly, none);
   }
   .banner-content{
     max-width: 70%;
