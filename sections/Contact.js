@@ -1,7 +1,7 @@
 "use client";
 
 import { Title, TitleSm } from "@/app/components/common/Title"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import { AiFillInstagram, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
 import { BiUserCircle } from "react-icons/bi"
 import { BsFacebook } from "react-icons/bs"
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi"
@@ -47,7 +47,7 @@ const Contact = () => {
                     <Link href="#"><BsFacebook size={25} /></Link>
                 </li>
                 <li className='icon'>
-                    <Link href="#"><AiFillBehanceCircle size={25} /></Link>
+                    <Link href="#"><AiFillYoutube size={25} /></Link>
                 </li>
                 <li className='icon'>
                   <Link href="#"><AiFillInstagram size={25} /></Link>

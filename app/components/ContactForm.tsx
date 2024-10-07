@@ -133,6 +133,7 @@ const ContactForm = () => {
                         <input
                             type="text"
                             id="name"
+                            name="senderName"
                             value={formData.name}
                             onChange={handleInputChange}
                         />

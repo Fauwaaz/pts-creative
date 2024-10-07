@@ -31,13 +31,12 @@ body {
   text-transform: uppercase;
   // font-family: "Plaster", system-ui;
   font-family: 'Poppins', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   display: flex;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  -webkit-text-stroke: 1px $white;
-  color: transparent;
+  color: $white;
 }
 
 .parallax span {

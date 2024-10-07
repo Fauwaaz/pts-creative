@@ -123,6 +123,9 @@
     @include flex(center, space-evenly, none);
   }
   .banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     max-width: 70%;
   }
 }
@@ -233,7 +236,7 @@ footer {
     color: rgba($white, 0.5);
   }
   ul li a {
-    color: rgba($white, 0.5);
+    color: rgba($white, 0.9);
     transition: 0.5s ease-in-out;
     margin-bottom: $xl-2;
     display: block;

@@ -80,19 +80,20 @@
 .button-secondary{
   text-transform: capitalize;
   color: $white;
+  max-width: 35%;
   padding: 13px 40px;
   background-color: #00335f;
   border: 1px solid $white;
-  font-size: $md;
+  font-size: $md; 
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 600;
   box-shadow: $shadow-md;
   transition: all 0.3s ease;
   cursor: pointer;
   &:hover {
     color: #00335f;
     background-color: $white;
-    border: 1px solid $blue;
+    border: 1px solid #00335f;
   }
 } 
 .brand-img{

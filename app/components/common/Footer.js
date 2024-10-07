@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai"
 
 const TextStyle = {
   fontSize: "16px",
@@ -80,12 +80,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link href="/">
-                    <AiFillBehanceCircle size={25} />
+                    <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
                   <Link href="/">
-                    <AiFillInstagram size={25} />
+                    <AiFillYoutube size={25} />
                   </Link>
                 </li>
                 <li>
