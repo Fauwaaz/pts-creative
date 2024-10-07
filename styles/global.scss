@@ -399,6 +399,12 @@ footer {
 
   
   .contact {
+    .left{
+      padding: 0px;
+    }
+    .left .box {
+      margin-bottom: 20px;
+    }
     .right {
       padding: $xl-3;
     }

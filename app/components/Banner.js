@@ -1,7 +1,6 @@
 import { HiOutlineArrowDownLeft } from "react-icons/hi2"
 import { TitleLogo } from "./common/Title"
-
-
+import Link from "next/link";
 
 const Banner = () => {
     return (
@@ -12,9 +11,9 @@ const Banner = () => {
                         <h4 className="title-logo">Elevate Your Digital Strategy Today!</h4>
                         <TitleLogo title="Are you ready to take your marketing to the next level? Our team is here to help." />
                     </div>
-                    <button className="button-primary">
+                    <Link href="/contact" className="button-primary">
                         Schedule Your Free Consultation Now <HiOutlineArrowDownLeft />
-                    </button>
+                    </Link>
                 </div>
             </section>
         </>
