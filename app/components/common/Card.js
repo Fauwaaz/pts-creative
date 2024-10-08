@@ -36,7 +36,7 @@ const Card = ({ data, caption, show, path }) => {
                 <TitleSm title={data.title} />
               </Link>
                 {caption && ( 
-                <Link href={`${path}/${data.slug}`}>
+                <Link href={`${path}/${data.slug}`} style={{textDecoration: "underline"}}>
                   {caption} <HiOutlineArrowRight className='link-icon' />
                 </Link>
                 )}
