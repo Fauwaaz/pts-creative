@@ -101,7 +101,7 @@ const Footer = () => {
                 </ul>
               </li>
               <li>
-                <Link href="tel:+919136477352"><h5 style={TextStyle}>+91 9136477352</h5></Link>
+                <Link href="tel:+919136477352"><h4 style={TextStyle}>+91 9136477352</h4></Link>
                 <Link href="mailto:info@ptssystems.co.in"><h5 style={TextStyle}>info@ptssystems.co.in</h5></Link>
                 <p style={{ fontSize: "14px", marginBottom: "10px" }}>Address: Unit 1, Building, no. 2, Millenium Business Park, MIDC Industrial Area, Sector 1, Mahape, Navi Mumbai, Maharashtra 400710</p>
               </li>
