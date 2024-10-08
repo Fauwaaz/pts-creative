@@ -28,6 +28,7 @@ const Header = () => {
                 height={100}
                 width={100}
                 fetchPriority="high"
+                priority={true}
                 unoptimized = {true} 
               />
             </Link>

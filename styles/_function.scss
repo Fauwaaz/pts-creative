@@ -28,7 +28,13 @@
   @include grid(repeat(6, 1fr), 30px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 1000px) {
+  .grid-5 {
+    @include grid(repeat(2, 1fr), 10px);
+  }
+}
+
+@media screen and (width <= 800px) {
   .grid-6,
   .grid-4,
   .grid-3 {
@@ -36,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (width<= 500px) {
   .container {
     max-width: 100%;
     padding: 0 20px;
@@ -46,9 +52,5 @@
   .grid-6,
   .grid-4 {
     @include grid(repeat(1, 1fr), 10px);
-  }
-
-  .grid-5 {
-    @include grid(repeat(2, 1fr), 10px);
   }
 }

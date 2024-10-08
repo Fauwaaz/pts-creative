@@ -32,7 +32,7 @@ const Footer = () => {
               <button className="button-primary">Request for quote</button>
             </div>
             <ul>
-              <h3>COMPANY</h3>
+              <li><h3>COMPANY</h3></li>
               <li>
                 <Link href="/about">About agency</Link>
               </li>
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
             </ul>
             <ul>
-              <h3>SERVICES</h3>
+              <li><h3>SERVICES</h3></li>
               <li>
                 <Link href="/services/digital-marketing">Digital Marketing</Link>
               </li>
@@ -71,7 +71,7 @@ const Footer = () => {
               </li>
             </ul>
             <ul>
-              <h3>CONNECT</h3>
+              <li><h3>CONNECT</h3></li>
               <div className="connect">
                 <li>
                   <Link href="/">

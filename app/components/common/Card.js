@@ -19,16 +19,16 @@ const Card = ({ data, caption, show, path }) => {
                 // transition={{ duration: 0.5 }}
           >
           <div className='card'>
-            <div className='card-img'>
-              <Image
-                src={data.cover}
-                alt={data.title}
-                width={130}
-                height={130}
-                quality={100}
-                unoptimized = {true}
-              />
-            </div>
+              <Link href={`${path}/${data.slug}`} className='card-img'>
+                <Image
+                  src={data.cover}
+                  alt={data.title}
+                  width={130}
+                  height={130}
+                  quality={100}
+                  unoptimized = {true}
+                />
+              </Link>
             <div 
               className='card-details'
             >
