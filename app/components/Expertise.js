@@ -17,7 +17,7 @@ const Services = () => {
           <div className="hero-content grid-4">
             {limitedServices.map((item, i) => (
               <div className="box" key={i}>
-                <Card data={item} key={item.i} caption="Learn more" path="services" />
+                <Card data={item} key={item.i} path="services" />
               </div>
             ))}
           </div>

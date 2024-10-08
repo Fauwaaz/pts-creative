@@ -33,11 +33,12 @@ const Card = ({ data, caption, show, path }) => {
               className='card-details'
             >
               <Link href={`${path}/${data.slug}`} className='title-link'>
-                <TitleSm title={data.title} />
+                <TitleSm title={data.title} /> 
               </Link>
+                <HiOutlineArrowRight className='link-icon' />
                 {caption && ( 
-                <Link href={`${path}/${data.slug}`} style={{textDecoration: "underline"}}>
-                  {caption} <HiOutlineArrowRight className='link-icon' />
+                <Link href={`${path}/${data.slug}`}>
+                  {caption} 
                 </Link>
                 )}
               <div className='flex'>
