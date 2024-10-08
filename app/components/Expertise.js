@@ -11,20 +11,12 @@ const Services = () => {
     <>
       <section className="expertise">
         <div className="container">
-          <div className="heading-title">
-            <Title title="Our Comprehensive Services" />
-          </div>
           <div className="hero-content grid-4">
             {limitedServices.map((item, i) => (
               <div className="box" key={i}>
                 <Card data={item} key={item.i} path="services" />
               </div>
             ))}
-          </div>
-          <div style={{ textAlign: "center"}} >
-            <Link href="/services" className="button-secondary">
-              Show More &nbsp; <HiOutlineArrowUpRight />
-            </Link>
           </div>
         </div>
       </section>

@@ -1,7 +1,5 @@
 import Banner from "@/app/components/Banner"
-import Brand from "@/app/components/Brand"
-import Testimonial from "@/app/components/Testimonials"
-import { Title, TitleSm } from "@/app/components/common/Title"
+import Expertise from "@/app/components/Expertise"
 import Image from "next/image"
 
 const About = () => {
@@ -10,33 +8,18 @@ const About = () => {
       <section className='agency bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='ABOUT US' /> <br />
+            <h1 className="titleSm">ABOUT US</h1> <br />
             <br />
-            <Title title='The Last Digital Agency You Will Ever Need!' className='title-bg' />
           </div>
 
           <div className='content flex1'>
-            <div className='left w-60 py'>
-              <TitleSm title="Company's journey" />
-              <p className='desc-p'>Company's Journey
-                Founded in the heart of India's bustling cities, Mumbai and Pune, PTS Systems Solutions Pvt. Ltd. has emerged as a pioneer in the digital marketing sphere. Our journey began with a simple yet profound idea: to empower businesses with innovative digital strategies that drive growth and success. Over the years, we have evolved alongside the digital landscape, continuously adapting to the latest trends and technologies. Our commitment to excellence has established us as a trusted partner for businesses looking to navigate the complexities of online marketing.
+            <div className='left w-70 py'>
+              <h2 className="text-35 text-primary">Company&apos;s Journey</h2>
+              <p className='desc-p'>
+                Founded in the heart of India's bustling cities, Mumbai and Pune, <strong>PTS Systems Solutions Pvt. Ltd.</strong> has emerged as a pioneer in the digital marketing sphere. Our journey began with a simple yet profound idea: to empower businesses with innovative digital strategies that drive growth and success. Over the years, we have evolved alongside the digital landscape, continuously adapting to the latest trends and technologies. Our commitment to excellence has established us as a trusted partner for businesses looking to navigate the complexities of online marketing.
               </p>
-              <div className='grid-3'>
-                <div className='box'>
-                  <h3 className='title'>10+</h3>
-                  <h4>Years of experience</h4>
-                </div>
-                <div className='box'>
-                  <h3 className='title'>50+</h3>
-                  <h4>Successful cases</h4>
-                </div>
-                <div className='box'>
-                  <h3 className='title'>12+</h3>
-                  <h4>Industry awards</h4>
-                </div>
-              </div>
             </div>
-            <div className='right w-40 ml'>
+            <div className='right w-30 ml'>
               <Image
                 className="round"
                 src={'/s1.jpg'}
@@ -49,7 +32,7 @@ const About = () => {
           </div>
 
           <div className='content flex'>
-            <div className='left w-40 py'>
+            <div className='left w-30 py'>
               <Image
                 className="round"
                 src={'/s4.jpg'}
@@ -59,22 +42,26 @@ const About = () => {
                 quality={100}
               />
             </div>
-            <div className='right w-60 ml'>
-              <TitleSm title='Purpose and Goals' />
-              <p className='desc-p'>At PTS Systems & Solutions, our purpose is to elevate brands by unlocking their potential in the online market. We realize that every business is unique; therefore, we strive to deliver personalized marketing solutions tailored to individual needs. Our goals are to enhance brand visibility, foster customer engagement, and accelerate business growth through effective digital marketing strategies. We envision a future where every business, regardless of its size, can thrive in the digital realm.
+            <div className='right w-70 ml'>
+              <h2 className="text-35 text-primary">Purpose and Goals</h2>
+              <p className='desc-p'>At <strong>PTS Systems & Solutions</strong>, our purpose is to elevate brands by unlocking their potential in the online market. We realize that every business is unique; therefore, we strive to deliver personalized marketing solutions tailored to individual needs. Our goals are to enhance brand visibility, foster customer engagement, and accelerate business growth through effective digital marketing strategies. We envision a future where every business, regardless of its size, can thrive in the digital realm.
               </p>
             </div>
           </div>
+          <div className="content text-center">
+            <h2 className="text-35 text-primary">Introduction to the Team</h2>
+            <p className='desc-p'>Our success is a direct result of our talented team of digital marketing experts. Each member of PTS Systems & Solutions brings a unique skill set and years of experience in their respective fields, including Digital Marketing, Website Development, Strategy & Branding, Website Design, Mobile App Development, Cloud Hosting, Web Hosting, and Agile Methodology. Our collaborative approach ensures that we stay ahead of the curve, continuously learning, innovating, and implementing the best practices in digital marketing to provide exceptional service to our clients.
+            </p>
+          </div>
+          <div className="content text-center">
+            <h2 className="text-35 text-primary">Offerings</h2>
+            <p className='desc-p'>With a comprehensive suite of services, we cater to a wide array of digital marketing needs. Our offerings include:
+            </p>
+            <Expertise />
+          </div>
         </div>
       </section>
-
-      <Brand />
-      <Testimonial />
       <Banner />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   )
 }

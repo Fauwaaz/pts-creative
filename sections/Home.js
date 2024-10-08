@@ -7,6 +7,7 @@ import Brand from "@/app/components/Brand"
 import TextScroll from "./TextScroll"
 import Link from "next/link"
 import Video from "@/app/components/Video"
+import { HiOutlineArrowUpRight } from "react-icons/hi2"
 
 const Home = () => {
   return (
@@ -32,7 +33,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="heading-title">
+        <Title title="Our Comprehensive Services" />
+      </div>
       <Expertise />
+      <div style={{ textAlign: "center" }} >
+        <Link href="/services" className="button-secondary">
+          Show More &nbsp; <HiOutlineArrowUpRight />
+        </Link>
+      </div>
       <TextScroll />
       <section className="hero-sec">
         <div className="container">
