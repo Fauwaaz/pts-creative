@@ -161,7 +161,7 @@
           margin-bottom: $s;
         }
         span {
-          color: rgba($dark, 0.5);
+          color: $dark;
           text-transform: uppercase;
           font-size: $sm;
           letter-spacing: 3px;
@@ -233,7 +233,7 @@ footer {
   }
   span,
   p {
-    color: rgba($white, 0.5);
+    color: $white;
   }
   ul li a {
     color: rgba($white, 0.9);
@@ -338,7 +338,7 @@ footer {
         padding: $xl-2 0;
       }
       span {
-        opacity: 0.5;
+        opacity: 0.8;
       }
     }
   }

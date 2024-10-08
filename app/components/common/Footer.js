@@ -72,8 +72,8 @@ const Footer = () => {
             </ul>
             <ul>
               <li><h3>CONNECT</h3></li>
-              <div className="connect">
-                <ul>
+              <div>
+                <ul className="connect">
                   <li>
                     <Link href="/">
                       <BsFacebook size={25} />

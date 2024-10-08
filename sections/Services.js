@@ -10,7 +10,7 @@ const Services = () => {
           <div className='heading-title'>
             <TitleSm title='SERVICES' /> <br />
             <br />
-            <Title title='Unique technologies & modern approach' className='title-bg' />
+            <Title title='Unique Technologies & Modern Approach' className='title-bg' />
           </div>
           <div className='grid-4 py'>
             {services.map((item) => (
