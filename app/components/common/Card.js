@@ -7,7 +7,7 @@ import { HiOutlineArrowRight } from "react-icons/hi"
 // import { motion, useInView } from "framer-motion"
 // import { useRef } from "react"
 
-const Card = ({ data, caption, show, path }) => {
+const Card = ({ data, caption, path }) => {
   // const ref = useRef(null)
   // const isInView = useInView(ref, { triggerOnce: false })
   return (
