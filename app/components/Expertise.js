@@ -1,8 +1,5 @@
 import { services } from "@/assets/data/dummydata"
-import { Title } from "./common/Title"
 import Card from "@/app/components/common/Card"
-import Link from "next/link"
-import { HiOutlineArrowUpRight } from "react-icons/hi2"
 
 const Services = () => {
   const limitedServices = services.slice(0, 4)
