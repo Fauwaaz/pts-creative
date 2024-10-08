@@ -8,7 +8,7 @@ import { AiOutlineClose } from "react-icons/ai"
 import Image from "next/image"
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState("")
+  const [activeLink, setActiveLink] = useState('')
   const [open, setOpen] = useState(false)
 
   const router = useRouter()
@@ -34,10 +34,10 @@ const Header = () => {
             </Link>
           </div>
           <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(null)}>
-            <Link href='/' className={activeLink == "/" ? "activeLink" : "none"}>Home</Link>
-            <Link href='/about' className={activeLink == "/agency" ? "activeLink" : "none"}>About</Link>
-            <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>Services</Link>
-            <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>Contact Us</Link>
+            <Link href='/' className={activeLink === "/" ? "activeLink" : ""}>Home</Link>
+            <Link href='/about' className={activeLink === "/about" ? "activeLink" : ""}>About</Link>
+            <Link href='/services' className={activeLink === "/services" ? "activeLink" : ""}>Services</Link>
+            <Link href='/contact' className={activeLink === "/contact" ? "activeLink" : ""}>Contact Us</Link>
           </nav>
           <button className="menucontrol" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>

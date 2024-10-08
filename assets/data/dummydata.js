@@ -32,7 +32,7 @@ export const services = [
     title: "Digital Marketing",
     description: "Digital Marketing",
     cover: "/digital-marketing.webp",
-    desc: [{ text: "Access everything you need to market your business online, all in one place!" }]
+    desc: [{ text: "PTS Systems Solutions Pvt. Ltd., the best digital marketing agency in Mumbai is here to help you make the most of your brand. We offer a wide range of digital marketing services for social media marketing, search engine optimization, performance marketing, and access to diverse media platforms." , text2: "Our goal is straightforward: we want to boost your brand's image, influence potential buyers, and generate revenue. We achieve this through a complete suite of performance-based digital marketing solutions.", text3: "Imagine your brand thriving in the digital world, effortlessly reaching, growing, and converting your audience. At PTS Systems Solutions Pvt. Ltd., we're here to guide you every step of the way. Together, we'll unlock your brand's potential and drive it towards unparalleled success." }]
   },
   {
     slug: "web-development",

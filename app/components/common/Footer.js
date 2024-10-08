@@ -49,10 +49,10 @@ const Footer = () => {
                 <Link href="/services/digital-marketing">Digital Marketing</Link>
               </li>
               <li>
-                <Link href="/services/website-development">Website Development</Link>
+                <Link href="/services/web-development">Website Development</Link>
               </li>
               <li>
-                <Link href="/services/website-design">Website Design</Link>
+                <Link href="/services/web-design">Website Design</Link>
               </li>
               <li>
                 <Link href="/services/mobile-app-development">Mobile App Development</Link>

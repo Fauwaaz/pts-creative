@@ -44,14 +44,6 @@ const Card = ({ data, caption, show, path }) => {
               <div className='flex'>
                 <span> {data.category} {data.post}</span> {data.date && <span> / {data.date}</span>}
               </div>
-
-              {show && (
-                <div>
-                  {data.desc.map((text, i) => (
-                    <p key={i} className="desc"> - {text.text}</p>
-                  ))}
-                </div>
-              )}
             </div>
           </div>    
         </div>
