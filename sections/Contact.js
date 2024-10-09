@@ -28,18 +28,15 @@ const Contact = () => {
                 </div>
                 <div className='box'>
                   <IoLocationOutline size={30} className='icons' />
-                  <h3>Mumbai</h3>
-                  <span>Milennium Business Park</span>
+                  <h3>Mumbai <br/><span className="desc">Milennium Business Park</span></h3>
                 </div>
                 <div className='box'>
                   <FiHelpCircle size={30} className='icons' />
-                  <h3>info@ptssystems.co.in</h3>
-                  <span>Drop us a line anytime!</span>
+                  <h3>info@ptssystems.co.in <br/> <span className="desc">Drop us a line anytime!</span></h3>
                 </div>
                 <div className='box'>
                   <BiUserCircle size={30} className='icons' />
                   <h3>hr@ptssystems.co.in</h3>
-                  <span>Careers</span>
                 </div>
               </div>
               <ul>
@@ -58,7 +55,7 @@ const Contact = () => {
               </ul>
             </div>
             <div className='right w-70'>
-              <h3 style={{color: "white", fontSize: "30px", fontWeight: "600", letterSpacing:"2px", marginBottom: "10px"}}>Make an online enquiry</h3>
+              <h3 style={{color: "white", fontSize: "30px", fontWeight: "600", letterSpacing:"2px", marginBottom: "10px"}}>Make An Online Enquiry</h3>
               <p className='desc'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
              <ContactForm />
