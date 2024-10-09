@@ -58,7 +58,7 @@ const Contact = () => {
               </ul>
             </div>
             <div className='right w-70'>
-              <h3 style={{color: "white", fontSize: "30px", fontWeight: "600", letterSpacing:"2px"}}>Make an online enquiry</h3>
+              <h3 style={{color: "white", fontSize: "30px", fontWeight: "600", letterSpacing:"2px", marginBottom: "10px"}}>Make an online enquiry</h3>
               <p className='desc'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
              <ContactForm />
