@@ -38,35 +38,35 @@ export const services = [
     slug: "web-development",
     title: "Web Development",
     description: "Webdevelopment",
-    cover: "/website-development.jfif",
+    cover: "/website-development.webp",
     desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
   },
   {
     slug: "web-design",
     title: "Web Design",
     description: "Web Design",
-    cover: "/website-design.jpg",
+    cover: "/web-design.webp",
     desc: [{ text: "Web design encompasses many different skills and disciplines in the production and maintenance of websites." }],
   },
   {
     slug: "mobile-app-development",
     title: "Mobile App Development",
     description: "Mobile App Development",
-    cover: "/mobiel-app-development.jpg",
+    cover: "/mobiel-app-development.webp",
     desc: [{ text: "We'll create a user-friendly app that keeps customers coming back for more." }],
   },
   {
     slug: "strategy-and-branding",
     title: "Strategy & Branding",
     description: "Strategy & Branding",
-    cover: "/Branding-Strategy.jpg",
+    cover: "/Branding-Strategy.webp",
     desc: [{ text: "Branding and awareness are two critical components of a successful business or organization's marketing strategy." }],
   },
   {
     slug: "cloud-hosting",
     title: "Cloud Hosting",
     description: "Cloud Hosting",
-    cover: "/cloud-hosting.jpg",
+    cover: "/cloud-hosting.webp",
     desc: [{ text: "This allows for greater scalability, flexibility, and reliability, as the resources of the network can be dynamically allocated to meet the changing needs of the website." }],
   },
   {
@@ -80,7 +80,7 @@ export const services = [
     slug: "agile-methodology",
     title: "Agile Methodology",
     description: "Agile Methodology",
-    cover: "/agile-methodology.jpg",
+    cover: "/agile-methodology.webp",
     desc: [{ text: "From product ideation to design, development, release, and maintenance, we help you turn your vision into reality. We deliver strategic product development services for various lines of business by leveraging our years of established experience and expertise." }],
   },
 ]
@@ -89,28 +89,28 @@ export const testimonial = [
   {
     id: 1,
     name: "Amir",
-    cover: "/Yaqeen Trading logo.jpg",
+    cover: "/Yaqeen Trading logo.webp",
     post: "Yaqeen Trading - CEO",
     desc: "We are thrilled with the results of our e-commerce website developed by PTS Systems. Their comprehensive approach, from design and development to marketing and SEO, has helped us achieve significant growth and reach a wider audience.",
   },
   {
     id: 2,
     name: "Kalyani",
-    cover: "/Kalyani Creation.png",
+    cover: "/Kalyani Creation.webp",
     post: "Kalyani Creation - Founder",
     desc: "The Kalyani Creations Saree website, expertly crafted by the PTS Systems and Solutions team, has transformed our online presence. The visually stunning design and seamless user experience have significantly boosted our online sales and customer satisfaction",
   },
   {
     id: 3,
     name: "Hussain Danewala",
-    cover: "/cropped-fevicon.png",
+    cover: "/Wipro_Logo.webp",
     post: "Wipro International - CEO",
     desc: "The PTS team's expertise in e-commerce development was instrumental in creating a visually stunning and user-friendly website for Wipro's international catalog. Their strategic SEO approach has significantly boosted our online visibility and generated valuable leads",
   },
   {
     id: 4,
     name: "Trupti Dhane",
-    cover: "/AGT-Logo.png",
+    cover: "/AGT-Logo.webp",
     post: "Avant-Garde Technology - Founder",
     desc: "PTS Systems's team expertly crafted a visually stunning and user-friendly e-commerce website that has significantly boosted our online sales. Their creative social media marketing campaigns, featuring captivating reels and engaging content, have expanded our brand reach and driven customer engagement.",
   },
@@ -158,23 +158,23 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "/JVR.png",
+    cover: "/JVR.webp",
   },
   {
     id: 2,
-    cover: "/YQT.png",
+    cover: "/YQT.webp",
   },
   {
     id: 3,
-    cover: "/KC.png",
+    cover: "/KC.webp",
   },
   {
     id: 4,
-    cover: "/WIT.png",
+    cover: "/WIT.webp",
   },
   {
     id: 5,
-    cover: "/AGT.png",
+    cover: "/AGT.webp",
   }
 ]
 
