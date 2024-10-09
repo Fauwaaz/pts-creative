@@ -330,7 +330,7 @@ footer {
       @include flex(center, center, none);
     }
     .box {
-      margin-bottom: $xll;
+      margin-bottom: 25px;
       .icons {
         color: $blue;
       }
@@ -345,7 +345,7 @@ footer {
   .right {
     border-radius: 10px;
     padding: $xll;
-    background: $gradient2;
+    background: $blue;
     form {
       margin-top: $xll;
     }
@@ -357,6 +357,7 @@ footer {
       }
       textarea,
       input {
+        font-family: var(--primary) ;
         width: 100%;
         background-color: $white;
         padding: 15px;

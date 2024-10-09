@@ -29,7 +29,7 @@ const Footer = () => {
               </span>
               <br />
               <br />
-              <button className="button-primary">Request for quote</button>
+              <Link href="/contact" className="button-primary">Request for quote</Link>
             </div>
             <ul>
               <li><h3>COMPANY</h3></li>
