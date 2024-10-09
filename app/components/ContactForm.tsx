@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { sendEmail } from '../actions/sendEmail';
+// import { sendEmail } from '../actions/sendEmail';
 
 const ContactForm = () => {
 
@@ -126,12 +126,12 @@ const ContactForm = () => {
         </div>
       ) : (
         <form onSubmit={handleSubmit}
-          action={async (formData) => {
+          action={(formData) => {
             console.log("Runing On client")
             console.log(formData.get("senderEmail"));
             console.log(formData.get("senderName"));
             console.log(formData.get("senderPhone"));
-            await sendEmail(formData);
+            // await sendEmail(formData);
           }}
         >
           <div className='grid-2'>
