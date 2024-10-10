@@ -98,11 +98,9 @@ const ContactForm = () => {
   return (
     <>
         <form onSubmit={validateForm}
-          action={(formData) => {
-            console.log("Runing on client");
-            console.log(formData.get("senderEmail"))
-            // await sendEmail(formData)
-          }}
+          // action={async (formData) => {
+          //   await sendEmail(formData)
+          // }}
         >
           <div className="grid-2">
             <div className="inputs">

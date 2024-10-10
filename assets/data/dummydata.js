@@ -267,3 +267,136 @@ export const teamdata = [
     post: "",
   },
 ]
+
+export const subMenu = [
+  {
+    "id": 1,
+    "title": "Digital Marketing",
+    "services": [
+      {
+        "name": "Pay Per Click (PPC)",
+        "href": "/"
+      },
+      {
+        "name": "Search Engine Optimization",
+        "href": "/"
+      },
+      {
+        "name": "Social Media Marketing",
+        "href": "/"
+      },
+      {
+        "name": "Social Media Optimization",
+        "href": "/"
+      },
+      {
+        "name": "Ecommerce Marketing",
+        "href": "/"
+      },
+      {
+        "name": "App Promotion",
+        "href": "/"
+      },
+      {
+        "name": "Email Marketing",
+        "href": "/"
+      },
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Website Development",
+    "services": [
+      {
+        "name": "Wordpress Website Development",
+        "href": "/"
+      },
+      {
+        "name": "PHP Web Development",
+        "href": "/"
+      },
+      {
+        "name": "E-commerce Development",
+        "href": "/"
+      },
+      {
+        "name": "Shopify Website Development",
+        "href": "/"
+      },
+      {
+        "name": "CMS Development",
+        "href": "/"
+      },
+      {
+        "name": "CRM Development",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Branding",
+    "services": [
+      {
+        "name": "Logo Design",
+        "href": "/"
+      },
+      {
+        "name": "UI/UX Design",
+        "href": "/"
+      },
+      {
+        "name": "Packaging Design",
+        "href": "/"
+      },
+      {
+        "name": "Company Profile Design",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Videos Creation",
+    "services": [
+      {
+        "name": "Explainer Videos",
+        "href": "/"
+      },
+      {
+        "name": "Educational Videos",
+        "href": "/"
+      },
+      {
+        "name": "Tutorial & How-to Videos",
+        "href": "/"
+      },
+      {
+        "name": "Commercial Videos",
+        "href": "/"
+      },
+      {
+        "name": "Whiteboard Animation",
+        "href": "/"
+      },
+      {
+        "name": "Social Media Videos",
+        "href": "/"
+      },
+      {
+        "name": "Ecommerce Product Videos",
+        "href": "/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Graphic Design",
+    "services": [
+      {
+        "name": "Social Media Creatives",
+        "href": "/"
+      }
+    ]
+  }
+]

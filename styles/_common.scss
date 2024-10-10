@@ -154,7 +154,8 @@
   text-transform: capitalize !important;
   padding: 2px 5px 2px 5px;
   display: flex;
-  background-color: $white;
+  background-color: rgba($white, 0.8);
+  border-bottom: 1px solid;
   margin-top: -3px;
   margin-left: 5px;
   border-radius: 0px 0px 5px 5px;
