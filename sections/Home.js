@@ -8,12 +8,26 @@ import TextScroll from "./TextScroll"
 import Link from "next/link"
 import Video from "@/app/components/Video"
 import { HiOutlineArrowUpRight } from "react-icons/hi2"
+import Image from "next/image"
 
 const Home = () => {
   return (
     <>
       <section className="hero" >
         <Video />
+        <Image 
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            zIndex: "-2"
+          }}
+          alt="pts digital agency"
+          src={"/earth.webp"}
+          fill
+          fetchPriority="high"
+          priority={true}
+          unoptimized = {true} 
+        />
         <div className="container home-hero">
           <h1 className="logobg">Unlock Your Business Potential with <br />Premier <span className="blue">Digital Marketing</span> Solutions</h1>
           <div className="sub-heading heading-title white">
