@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { sendEmail } from '../actions/sendEmail';
+// import { sendEmail } from '../actions/sendEmail';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', number: '', industry: '', message: '' });
@@ -98,10 +98,10 @@ const ContactForm = () => {
   return (
     <>
         <form onSubmit={validateForm}
-          action={async (formData) => {
+          action={(formData) => {
             console.log("Runing on client");
             console.log(formData.get("senderEmail"))
-            await sendEmail(formData)
+            // await sendEmail(formData)
           }}
         >
           <div className="grid-2">
