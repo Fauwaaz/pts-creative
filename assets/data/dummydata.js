@@ -33,7 +33,7 @@ export const services = [
     description: "Digital Marketing",
     cover: "/digital-marketing.webp",
     h1: "Your Success Story Starts Now!",
-    desc: [{ text: "PTS Systems Solutions Pvt. Ltd. is a full-suite best digital marketing agency in India, offering a wide range of digital marketing services globally. Turn your business into a sales engine today, generating revenue 3 times faster than comparable markets. We offer a comprehensive suite of digital marketing services designed to help businesses thrive in the ever-evolving digital landscape. Our goal is to drive measurable results that align with your business objectives, whether you're looking to increase brand awareness, generate leads, or boost conversions."}],
+    desc: [{ text: "PTS Systems Solutions Pvt. Ltd. is a full-suite best digital marketing agency in India, offering a wide range of digital marketing services globally. Turn your business into a sales engine today, generating revenue 3 times faster than comparable markets. We offer a comprehensive suite of digital marketing services designed to help businesses thrive in the ever-evolving digital landscape. Our goal is to drive measurable results that align with your business objectives, whether you're looking to increase brand awareness, generate leads, or boost conversions." }],
     cta1: "Get Started Today!",
     h2: "Everything starts with a Marketing Plan",
     h2Desc: "Let our skilled talent unleash the full revenue potential of your business, creating a lucrative success story. Want to find out how we do it?",
@@ -110,13 +110,50 @@ export const services = [
         desc: "At PTS Systems & Solutions, we are committed to delivering results through data-driven strategies and innovative solutions. Partner with us to elevate your business and achieve your digital marketing goals."
       }
     ],
-    subCategory: {
-      slug: "pay-per-click",
-      title: "Pay Per Click",
-      description: "pay per click",
-      cover: "/",
-      desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
-    },
+    subCategory: [
+      {
+        slug: "pay-per-click",
+        title: "Pay Per Click (PPC)",
+        description: "pay per click",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+      {
+        slug: "search-engine-optimization",
+        title: "Search Engine Optimization",
+        description: "Search Engine Optimization",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+      {
+        slug: "social-media-marketing",
+        title: "Social Media Marketing",
+        description: "Social Media Marketing",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+      {
+        slug: "social-media-optimization",
+        title: "Social Media Optimization",
+        description: "Social Media Optimization",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+      {
+        slug: "ecommerce-marketing",
+        title: "Ecommerce Marketing",
+        description: "Ecommerce Marketing",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+      {
+        slug: "email-marketing",
+        title: "Email Marketing",
+        description: "Email Marketing",
+        cover: "/",
+        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+      },
+    ],
   },
   {
     slug: "web-development",
@@ -359,27 +396,27 @@ export const subMenu = [
     "services": [
       {
         "name": "Pay Per Click (PPC)",
-        "href": "/services/digital-marketing/pay-per-click/"
+        "href": "/services/digital-marketing/categories/pay-per-click"
       },
       {
         "name": "Search Engine Optimization",
-        "href": "/services/digital-marketing/search-engine-optimization"
+        "href": "/services/digital-marketing/categories/search-engine-optimization"
       },
       {
         "name": "Social Media Marketing",
-        "href": "/services/digital-marketing/social-media-marketing"
+        "href": "/services/digital-marketing/categories/social-media-marketing"
       },
       {
         "name": "Social Media Optimization",
-        "href": "/"
+        "href": "/services/digital-marketing/categories/social-media-optimization"
       },
       {
         "name": "Ecommerce Marketing",
-        "href": "/"
+        "href": "/services/digital-marketing/categories/ecommerce-marketing"
       },
       {
         "name": "Email Marketing",
-        "href": "/"
+        "href": "/services/digital-marketing/categories/email-marketing"
       },
     ]
   },

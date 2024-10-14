@@ -1,3 +1,5 @@
+"use client";
+
 import { services } from "@/assets/data/dummydata";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -40,7 +42,6 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
         <section className="bg-top">
             <div className='heading-title container'>
                 <TitleSm title='SERVICES' /> <br />
-                <br />
                 <Title title={service.title} className='title-bg' />
                 <h1>{service.h1}</h1>
                 <div className="py">

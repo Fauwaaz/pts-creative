@@ -51,7 +51,7 @@ const ContactForm = () => {
     
     const isValid = Object.keys(newErrors).length === 0;
     if (!isValid) {  
-      setIsSubmitted(true);
+      setIsSubmitted(false);
       setFormData({
         name: "",
         email: "",
