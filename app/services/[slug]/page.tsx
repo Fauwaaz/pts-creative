@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { Title, TitleSm } from "@/app/components/common/Title";
 import Link from "next/link";
 import IconBox from "@/app/components/common/IconBox"
-import Banner from "@/app/components/Banner";
+import ServicesBanner from "@/app/components/ServicesBanner";
 
 export async function generateStaticParams() {
     return services.map((service) => ({
@@ -75,9 +75,9 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                 </div>
 
                 <div className="py">
-                    {service && service.serviceSection && service.serviceSection.map((item) => {
+                    {service && service.serviceSection && service.serviceSection.map((item, index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <Title title="Our Services" className="" />
                                 <h3>{item.h3}</h3>
                                 <div className="grid-2 text-left py">
@@ -87,12 +87,13 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                                         )
                                     })}
                                 </div>
+                                <p className="desc">{item.desc}</p>
                             </div>
                         )
                     })}
                 </div>
             </div>
-            <Banner />
+            <ServicesBanner />
         </section>
     );
 };

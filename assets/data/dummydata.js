@@ -1,7 +1,7 @@
-import { AiFillContacts, AiOutlineCalendar, AiOutlinePhone } from "react-icons/ai"
+import { AiFillContacts, AiOutlineCalendar } from "react-icons/ai"
 import { TfiRulerPencil } from "react-icons/tfi"
 import { VscFileSubmodule } from "react-icons/vsc"
-import { BiEnvelope, BiSolidReport, BiUser } from "react-icons/bi"
+import { BiCalendar, BiEnvelope, BiLogoGoogle, BiPointer, BiSolidReport, BiUser, BiWorld } from "react-icons/bi"
 
 export const home = [
   {
@@ -65,50 +65,58 @@ export const services = [
         h3: "Our Key Digital Marketing Services",
         service: [
           {
-            icon: <AiOutlinePhone size={30} />,
+            icon: <BiLogoGoogle size={40} />,
             title: "Search Engine Optimization (SEO)",
             desc: "Optimize your website for search engines and rank higher on Google. Our tailored SEO strategies improve visibility, enhance organic traffic, and help your business get found by your target audience.",
             serviceInclude: "Keyword research, On-page optimization, Technical SEO, Link building, and Local SEO."
           },
           {
-            icon: <VscFileSubmodule size={30} />,
+            icon: <BiPointer size={40} />,
             title: "Pay-Per-Click (PPC) Advertising",
             desc: "Maximize your return on investment with targeted and data-driven PPC campaigns. We craft ad strategies that target the right audience and deliver quick results.",
             serviceInclude: "Google Ads, Social Media Ads, Display Advertising, and Retargeting."
           },
           {
-            icon: <AiOutlineCalendar size={30} />,
+            icon: <BiWorld size={40} />,
             title: "Social Media Marketing (SMM)",
             desc: "Build a powerful brand presence across popular social platforms. Our social media marketing services are designed to engage your audience, build brand loyalty, and drive traffic to your website.",
             serviceInclude: "Strategy Development, Content Creation, Campaign Management, and Social Media Advertising."
           },
           {
-            icon: <BiUser size={30} />,
+            icon: <BiCalendar size={40} />,
             title: "Content Marketing",
             desc: "Engage your audience with compelling content that not only informs but also converts. Our content marketing team creates impactful blogs, articles, infographics, and videos that align with your brand voice and audience needs.",
             serviceInclude: "Blog Writing, Copywriting, Video Production, and Infographics."
           },
           {
-            icon: <BiEnvelope size={30} />,
+            icon: <BiEnvelope size={40} />,
             title: "Email Marketing",
             desc: "Nurture leads and convert them into customers with personalized email campaigns. Our email marketing services focus on segmentation, automation, and targeting to ensure your message reaches the right audience at the right time.",
             serviceInclude: "Email Campaign Strategy, Drip Campaigns, Newsletters, and Automated Emails."
           },
           {
-            icon: <AiFillContacts size={30} />,
+            icon: <AiFillContacts size={40} />,
             title: "Conversion Rate Optimization (CRO)",
             desc: "Turn your website visitors into paying customers with our CRO services. We analyze user behavior and make data-driven adjustments to enhance the user experience and increase conversion rates.",
             serviceInclude: "A/B Testing, Landing Page Optimization, and Heatmap Analysis."
           },
           {
-            icon: <BiSolidReport size={30} />,
+            icon: <BiSolidReport size={40} />,
             title: "Analytics & Reporting",
             desc: "Gain valuable insights into the performance of your digital campaigns. We provide in-depth analytics and transparent reporting to help you understand what's working and how to improve.",
             serviceInclude: "Google Analytics Setup, Campaign Tracking, and Custom Reporting."
           },
-        ]
+        ],
+        desc: "At PTS Systems & Solutions, we are committed to delivering results through data-driven strategies and innovative solutions. Partner with us to elevate your business and achieve your digital marketing goals."
       }
-    ]
+    ],
+    subCategory: {
+      slug: "pay-per-click",
+      title: "Pay Per Click",
+      description: "pay per click",
+      cover: "/",
+      desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+    },
   },
   {
     slug: "web-development",
@@ -351,15 +359,15 @@ export const subMenu = [
     "services": [
       {
         "name": "Pay Per Click (PPC)",
-        "href": "/"
+        "href": "/services/digital-marketing/pay-per-click/"
       },
       {
         "name": "Search Engine Optimization",
-        "href": "/"
+        "href": "/services/digital-marketing/search-engine-optimization"
       },
       {
         "name": "Social Media Marketing",
-        "href": "/"
+        "href": "/services/digital-marketing/social-media-marketing"
       },
       {
         "name": "Social Media Optimization",
