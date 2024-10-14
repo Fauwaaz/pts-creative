@@ -2,11 +2,22 @@ import { Metadata } from "next";
 import { services } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/app/components/common/Title";
 
+
 export async function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-    subslug: service.subCategory?.map((item) => item.slug).join(), 
-  }));
+  const params: { slug: string; subslug: string; }[] = [];
+
+  services.forEach((service) => {
+    if (service.subCategory) {
+      service.subCategory.forEach((subcat) => {
+        params.push({
+          slug: service.slug,
+          subslug: subcat.slug,
+        });
+      });
+    }
+  });
+
+  return params; 
 }
 
 export async function generateMetadata({
