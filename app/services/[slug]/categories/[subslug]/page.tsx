@@ -5,7 +5,7 @@ import { Title, TitleSm } from "@/app/components/common/Title";
 export async function generateStaticParams() {
   return services.map((service) => ({
     slug: service.slug,
-    subslug: service.subCategory?.map((item) => item.slug)[0], 
+    subslug: service.subCategory?.map((item) => item.slug).join(), 
   }));
 }
 
