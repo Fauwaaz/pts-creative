@@ -20,7 +20,7 @@ const Contact = () => {
             <Title title="Let's Start Right Now!" className='title-bg' />
           </div>
           <div className='content py flex1'>
-            <div className='left w-30'>
+            <div className='left w-50'>
               <div className='contact-deatils'>
                 <div className='box'>
                   <FiHeadphones size={30} className='icons' />
@@ -54,9 +54,9 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-            <div className='right w-70'>
+            <div className='right w-50'>
               <h3 style={{color: "white", fontSize: "30px", fontWeight: "600", letterSpacing:"2px", marginBottom: "10px"}}>Make An Online Enquiry</h3>
-              <p className='desc'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
+              <p className='desc' style={{color: "white"}}>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
              <ContactForm />
             </div>

@@ -50,7 +50,7 @@ const ContactForm = () => {
     setErrors(newErrors);
     
     const isValid = Object.keys(newErrors).length === 0;
-    if (isValid) {
+    if (!isValid) {  
       setIsSubmitted(true);
       setFormData({
         name: "",
@@ -61,7 +61,7 @@ const ContactForm = () => {
       });
     }
   
-    return isValid;
+    return validateForm;
   };
 
   const validateField = (fieldId: string, value: string): string | null => {
@@ -89,15 +89,15 @@ const ContactForm = () => {
     }
   };
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (!validateForm()) return;
-  //   setIsSubmitted(true);
-  // };
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    if (!validateForm()) return;
+  };
 
   return (
     <>
-        <form onSubmit={validateForm}
+        <form onSubmit={handleSubmit}
           // action={async (formData) => {
           //   await sendEmail(formData)
           // }}
@@ -105,7 +105,7 @@ const ContactForm = () => {
           <div className="grid-2">
             <div className="inputs">
               <input
-                name="senderName"
+                // name="senderName"
                 placeholder="Name"
                 type="text"
                 id="name"
@@ -120,7 +120,7 @@ const ContactForm = () => {
                 placeholder="Email"
                 type="email"
                 id="email"
-                name="senderEmail"
+                // name="senderEmail"
                 value={formData.email}
                 onChange={handleInputChange}
                 autoComplete="off"
@@ -132,7 +132,7 @@ const ContactForm = () => {
           <div className="grid-2">
             <div className="inputs">
               <input
-                name="number"
+                // name="number"
                 placeholder="Contact Number"
                 type="number"
                 id="number"
@@ -157,18 +157,17 @@ const ContactForm = () => {
 
           <div className="inputs">
             <textarea
-              name="senderMessage"
+              // name="senderMessage"
               placeholder="Message"
               id="message"
               cols={30}
-              rows={3}
+              rows={1}
               value={formData.message}
               onChange={handleInputChange}
               autoComplete="off"
             />
             {errors.message && <span className="errors" style={{marginTop:"-8px"}}>{errors.message}</span>}
           </div>
-
           <button type="submit" className="button-secondary">
             Send
           </button>

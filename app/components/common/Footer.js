@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { BsFacebook } from "react-icons/bs"
-import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai"
+import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 
 const TextStyle = {
   fontSize: "16px",

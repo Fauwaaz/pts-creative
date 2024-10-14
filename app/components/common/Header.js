@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import { BsTriangleFill } from "react-icons/bs";
 import { subMenu } from "@/assets/data/dummydata";
+import { motion } from "framer-motion"; 
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -41,22 +42,24 @@ const Header = () => {
           <nav className={open ? "openMenu" : "closeMenu"}>
             <Link href='/' className={activeLink === "/" ? "activeLink" : ""}>Home</Link>
             <Link href='/about' className={activeLink === "/about" ? "activeLink" : ""}>About</Link>
-            <div onMouseEnter={() => setShowDropdown(true)}>
+            <Link href='/contact' className={activeLink === "/contact" ? "activeLink" : ""}>Contact Us</Link>
+            <div onClick={() => setShowDropdown(true)}>
               <Link href='#' className={activeLink === "/services" ? "activeLink" : ""}>
                 Services <BsTriangleFill size={10} style={{ transform: "rotate(180deg)" }} />
               </Link>
             </div>
-            <div>
-
-            </div>
-            <Link href='/contact' className={activeLink === "/contact" ? "activeLink" : ""}>Contact Us</Link>
           </nav>
-          <button className="menucontrol" onClick={() => setOpen(!open)}>
+          <button className="menucontrol" onClick={() => setOpen(!open) || setShowDropdown(!showDropdown)}>
             {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
           </button>
         </div>
         {showDropdown && (
-          <div className="dropdown-menu"
+          <motion.div className="dropdown-menu"
+            initial={{opacity: 0, transform: "translateY(0px)"}}
+            animate={{
+              opacity: 1,
+              transition: {duration: 0.3, transform: "translateY(-8px)"}
+            }}
             onMouseMove={() => setShowDropdown(true)}
           >
             <div className="grid-5">
@@ -65,9 +68,9 @@ const Header = () => {
 
                   <ul key={index}>
                     <li><h3>{item.title}</h3></li>
-                    <li><hr style={{marginBottom:"5px"}}/></li>
+                    <li><hr style={{ marginBottom: "5px" }} /></li>
                     <li>
-                      <ul>
+                      <ul style={{listStyle: "circle  "}}>
                         {item.services.map((subItem, index) => {
                           return (
                             <li key={index}>
@@ -81,7 +84,7 @@ const Header = () => {
                 )
               })}
             </div>
-          </div>
+          </motion.div>
         )}
       </header>
     </>

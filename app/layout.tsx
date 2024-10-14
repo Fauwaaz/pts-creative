@@ -40,9 +40,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preload" as="image" href="/earth.webp" fetchPriority="high"/>
-      </head>
       <body
         className={`${poppins.variable} antialiased`}
       >

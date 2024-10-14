@@ -21,7 +21,7 @@ const Card = ({ data, caption, path }) => {
           <div className='card'>
               <Link href={`${path}/${data.slug}`} className='card-img'>
                 <Image
-                  src={data.cover}
+                  src={data.cover || data.icon}
                   alt={data.title}
                   width={130}
                   height={130}

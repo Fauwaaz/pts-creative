@@ -275,7 +275,6 @@ footer {
 
   .connect {
     @include flex(center, space-between, none);
-
     span {
       font-size: $sm;
       letter-spacing: 2px;
@@ -355,7 +354,7 @@ footer {
     padding-right: 60px;
 
     ul {
-      @include flex(center, space-between, none);
+      @include flex(center, space-evenly, none);
       margin-top: $xll;
     }
 
@@ -389,7 +388,7 @@ footer {
 
   .right {
     border-radius: 10px;
-    padding: $xll;
+    padding: $xl-4;
     background: $blue;
 
     form {

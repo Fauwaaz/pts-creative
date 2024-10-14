@@ -1,7 +1,7 @@
-import { AiOutlineCalendar } from "react-icons/ai"
+import { AiFillContacts, AiOutlineCalendar, AiOutlinePhone } from "react-icons/ai"
 import { TfiRulerPencil } from "react-icons/tfi"
 import { VscFileSubmodule } from "react-icons/vsc"
-import { BiUser } from "react-icons/bi"
+import { BiEnvelope, BiSolidReport, BiUser } from "react-icons/bi"
 
 export const home = [
   {
@@ -32,7 +32,83 @@ export const services = [
     title: "Digital Marketing",
     description: "Digital Marketing",
     cover: "/digital-marketing.webp",
-    desc: [{ text: "PTS Systems Solutions Pvt. Ltd., the best digital marketing agency in Mumbai is here to help you make the most of your brand. We offer a wide range of digital marketing services for social media marketing, search engine optimization, performance marketing, and access to diverse media platforms." , text2: "Our goal is straightforward: we want to boost your brand's image, influence potential buyers, and generate revenue. We achieve this through a complete suite of performance-based digital marketing solutions.", text3: "Imagine your brand thriving in the digital world, effortlessly reaching, growing, and converting your audience. At PTS Systems Solutions Pvt. Ltd., we're here to guide you every step of the way. Together, we'll unlock your brand's potential and drive it towards unparalleled success." }]
+    h1: "Your Success Story Starts Now!",
+    desc: [{ text: "PTS Systems Solutions Pvt. Ltd. is a full-suite best digital marketing agency in India, offering a wide range of digital marketing services globally. Turn your business into a sales engine today, generating revenue 3 times faster than comparable markets. We offer a comprehensive suite of digital marketing services designed to help businesses thrive in the ever-evolving digital landscape. Our goal is to drive measurable results that align with your business objectives, whether you're looking to increase brand awareness, generate leads, or boost conversions."}],
+    cta1: "Get Started Today!",
+    h2: "Everything starts with a Marketing Plan",
+    h2Desc: "Let our skilled talent unleash the full revenue potential of your business, creating a lucrative success story. Want to find out how we do it?",
+    card: [
+      {
+        icon: <AiOutlineCalendar size={30} />,
+        title: "Amazing communication",
+      },
+      {
+        icon: <TfiRulerPencil size={30} />,
+        title: "Define campaign objectives",
+      },
+      {
+        icon: <AiOutlineCalendar size={30} />,
+        title: "Conduct market research",
+      },
+      {
+        icon: <VscFileSubmodule size={30} />,
+        title: "Identify target audience",
+      },
+      {
+        icon: <BiUser size={30} />,
+        title: "Customized Marketing Strategies",
+      },
+    ],
+    cta2: "Want to learn more? Enquire Now",
+    serviceSection: [
+      {
+        h3: "Our Key Digital Marketing Services",
+        service: [
+          {
+            icon: <AiOutlinePhone size={30} />,
+            title: "Search Engine Optimization (SEO)",
+            desc: "Optimize your website for search engines and rank higher on Google. Our tailored SEO strategies improve visibility, enhance organic traffic, and help your business get found by your target audience.",
+            serviceInclude: "Keyword research, On-page optimization, Technical SEO, Link building, and Local SEO."
+          },
+          {
+            icon: <VscFileSubmodule size={30} />,
+            title: "Pay-Per-Click (PPC) Advertising",
+            desc: "Maximize your return on investment with targeted and data-driven PPC campaigns. We craft ad strategies that target the right audience and deliver quick results.",
+            serviceInclude: "Google Ads, Social Media Ads, Display Advertising, and Retargeting."
+          },
+          {
+            icon: <AiOutlineCalendar size={30} />,
+            title: "Social Media Marketing (SMM)",
+            desc: "Build a powerful brand presence across popular social platforms. Our social media marketing services are designed to engage your audience, build brand loyalty, and drive traffic to your website.",
+            serviceInclude: "Strategy Development, Content Creation, Campaign Management, and Social Media Advertising."
+          },
+          {
+            icon: <BiUser size={30} />,
+            title: "Content Marketing",
+            desc: "Engage your audience with compelling content that not only informs but also converts. Our content marketing team creates impactful blogs, articles, infographics, and videos that align with your brand voice and audience needs.",
+            serviceInclude: "Blog Writing, Copywriting, Video Production, and Infographics."
+          },
+          {
+            icon: <BiEnvelope size={30} />,
+            title: "Email Marketing",
+            desc: "Nurture leads and convert them into customers with personalized email campaigns. Our email marketing services focus on segmentation, automation, and targeting to ensure your message reaches the right audience at the right time.",
+            serviceInclude: "Email Campaign Strategy, Drip Campaigns, Newsletters, and Automated Emails."
+          },
+          {
+            icon: <AiFillContacts size={30} />,
+            title: "Conversion Rate Optimization (CRO)",
+            desc: "Turn your website visitors into paying customers with our CRO services. We analyze user behavior and make data-driven adjustments to enhance the user experience and increase conversion rates.",
+            serviceInclude: "A/B Testing, Landing Page Optimization, and Heatmap Analysis."
+          },
+          {
+            icon: <BiSolidReport size={30} />,
+            title: "Analytics & Reporting",
+            desc: "Gain valuable insights into the performance of your digital campaigns. We provide in-depth analytics and transparent reporting to help you understand what's working and how to improve.",
+            serviceInclude: "Google Analytics Setup, Campaign Tracking, and Custom Reporting."
+          },
+        ]
+      }
+    ]
   },
   {
     slug: "web-development",
@@ -291,10 +367,6 @@ export const subMenu = [
       },
       {
         "name": "Ecommerce Marketing",
-        "href": "/"
-      },
-      {
-        "name": "App Promotion",
         "href": "/"
       },
       {

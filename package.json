@@ -28,7 +28,7 @@
     "resend": "^4.0.0",
     "sass": "^1.78.0",
     "slick-carousel": "^1.8.1",
-    "tailwind-merge": "^2.5.2",
+    "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7",
     "web-vitals": "^4.2.3"
   },

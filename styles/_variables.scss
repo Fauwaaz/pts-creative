@@ -24,6 +24,16 @@ $shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: center;
 }
 
+.text-left{
+  text-align: left;
+}
+
+.Iconbox{
+  border: 1px solid #00335F;
+  border-radius: 10px;
+  padding: $xl-2;
+}
+
 .text-45 {
   font-size: 45px !important;
 }
