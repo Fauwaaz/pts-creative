@@ -2,6 +2,13 @@ import { Metadata } from "next";
 import { services } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/app/components/common/Title";
 
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+    subslug: service.subCategory?.map((item) => item.slug)[0], 
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
