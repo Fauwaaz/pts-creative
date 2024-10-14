@@ -1,5 +1,3 @@
-"use client";
-
 import { services } from "@/assets/data/dummydata";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
