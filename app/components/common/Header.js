@@ -20,6 +20,11 @@ const Header = () => {
     setActiveLink(router.pathname);
   }, [router.pathname]);
 
+ const handleRemove = () => {
+    setShowDropdown(false);
+    setOpen(false);
+ }
+
   return (
     <>
       <header onMouseLeave={() => setShowDropdown(false)} className={`dropdown ${showDropdown ? 'active' : ''}`}>
@@ -74,7 +79,7 @@ const Header = () => {
                         {item.services.map((subItem, index) => {
                           return (
                             <li key={index}>
-                              <Link href={subItem.href}>{subItem.name}</Link>
+                              <Link href={subItem.href} onClick={handleRemove}>{subItem.name}</Link>
                             </li>
                           )
                         })}

@@ -5,6 +5,7 @@ import "../styles/main.scss";
 
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
+import BackgroundLogo from "./components/common/BackgroundLogo";
 
 const poppins = localFont({
   src: [
@@ -44,7 +45,8 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         <Header />
-        {children}
+         {children} 
+         <BackgroundLogo />
         <Footer />
       </body>
     </html>
