@@ -32,7 +32,7 @@ const BackgroundLogo = () => {
   return (
     <>
       <motion.div
-        style={{ position: "fixed", zIndex: -999, filter: "brightness(0.5)", opacity: "0.1" }}
+        style={{ position: "fixed", top: 0 , zIndex: -999, filter: "brightness(0.5)", opacity: "0.1" }}
         animate={controls}
         transition={{ ease: "easeOut", duration: 0.2 }}
       >
