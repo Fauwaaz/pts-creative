@@ -10,6 +10,13 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata() {
+  return {
+    title: 'Categories | Services',
+    description: 'Our services categories',
+  }
+}
+
 const Categories = () => {
   return (
     <section className='heading-title container'>
