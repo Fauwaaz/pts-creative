@@ -3,6 +3,10 @@ import Link from 'next/link'
 import React from 'react'
 import { HiOutlineArrowUpRight } from 'react-icons/hi2'
 
+export async function generateStaticParams() {
+  return "Categories"
+}
+
 const Categories = () => {
   return (
     <section className='heading-title container'>
