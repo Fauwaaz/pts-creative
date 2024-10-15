@@ -32,44 +32,14 @@ const BackgroundLogo = () => {
   return (
     <>
       <motion.div
-        style={{ position: "absolute", top: "50%", left: "-50px", right: "0px", zIndex: -999, filter: "brightness(0.5)", opacity: "0.3" }}
+        style={{ position: "fixed", zIndex: -999, filter: "brightness(0.5)", opacity: "0.1" }}
         animate={controls}
         transition={{ ease: "easeOut", duration: 0.2 }}
       >
         <Image
           src={"/background-logo.webp"}
-          height={350}
-          width={350}
-          unoptimized={true}
-          priority={true}
-          alt="Background Image"
-          style={{ transform: "rotate(-40deg)" }}
-        />
-      </motion.div>
-      <motion.div
-        style={{ position: "absolute", top: "0%", right: "0px", zIndex: -999, filter: "brightness(0.5)", opacity: "0.3" }}
-        animate={controls}
-        transition={{ ease: "easeOut", duration: 0.2 }}
-      >
-        <Image
-          src={"/background-logo.webp"}
-          height={350}
-          width={350}
-          unoptimized={true}
-          priority={true}
-          alt="Background Image"
-          style={{ transform: "rotate(0deg)" }}
-        />
-      </motion.div>
-      <motion.div
-        style={{ position: "absolute", top: "100%", right: "0px", zIndex: -999, filter: "brightness(0.5)", opacity: "0.3" }}
-        animate={controls}
-        transition={{ ease: "easeOut", duration: 0.2 }}
-      >
-        <Image
-          src={"/background-logo.webp"}
-          height={350}
-          width={350}
+          height={705}
+          width={674}
           unoptimized={true}
           priority={true}
           alt="Background Image"
