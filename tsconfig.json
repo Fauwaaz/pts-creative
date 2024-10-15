@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "*.tsx", "app/blogs/[slug]/page.tsx", "app/components/*.tsx", "app/components/common/Header.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "*.tsx", "app/blogs/[slug]/page.tsx", "app/components/*.tsx", "app/components/common/Header.js", "app/components/common/*.js", "app/components/common/*.tsx"],
   "exclude": ["node_modules"]
 }

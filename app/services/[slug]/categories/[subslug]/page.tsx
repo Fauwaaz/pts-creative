@@ -48,7 +48,11 @@ export async function generateMetadata({
         return item.title;
       }
     }).join('')} | Services`,
-    description: service.description,
+    description: service.subCategory?.map((item) => {
+      if (item.slug === subslug) {
+        return item.description;
+      }
+    }).join(''),
     robots: "index, follow",
   };
 }
@@ -75,7 +79,7 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
       <p>Categories</p>
       <Title title={service.subCategory?.map((item) => {
         if (item.slug === subslug) {
-          return item.title;
+          return item.name;
         }
       })} className="title" />
     </section>

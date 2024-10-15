@@ -43,6 +43,7 @@ const Testimonials = () => {
         prevArrow: false,
         autoplay: true,
         autoplaySpeed: 1500,
+        dots: true,
         responsive: [
             {
                 breakpoint: 768,

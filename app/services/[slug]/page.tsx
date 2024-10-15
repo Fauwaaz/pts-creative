@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Title, TitleSm } from "@/app/components/common/Title";
 import Link from "next/link";
-import IconBox from "@/app/components/common/IconBox"
 import ServicesBanner from "@/app/components/ServicesBanner";
+import ServicesSlider from "@/app/components/common/ServicesSlider";
 
 export async function generateStaticParams() {
     return services.map((service) => ({
@@ -66,30 +66,15 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                             )
                         })}
                     </div>
+                    <br />
                     {service.cta2 && (
                         <Link href="/contact" className="button-primary">
                             {service.cta2}
                         </Link>
                     )}
-                </div>
-
-                <div className="py">
-                    {service && service.serviceSection && service.serviceSection.map((item, index) => {
-                        return (
-                            <div key={index}>
-                                <Title title="Our Services" className="" />
-                                <h3>{item.h3}</h3>
-                                <div className="grid-2 text-left py">
-                                    {item.service.map((item, index) => {
-                                        return (
-                                            <IconBox data={item} key={index} includes={"Services Includes: "} />
-                                        )
-                                    })}
-                                </div>
-                                <p className="desc">{item.desc}</p>
-                            </div>
-                        )
-                    })}
+                    {service.serviceSection && (
+                        <ServicesSlider />
+                    )}
                 </div>
             </div>
             <ServicesBanner />

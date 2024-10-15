@@ -4,7 +4,7 @@ import Link from "next/link";
 const ServicesBanner = () => {
     return (
         <>
-            <section className="banner">
+            <section className="banner" style={{marginTop: "-70px"}}>
                 <div className="container">
                     <div className="banner-content">
                         <h4 className="title-logo">Contact Us Today For A Free Consultation!
