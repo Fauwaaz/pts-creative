@@ -128,16 +128,16 @@
   .container {
     border-radius: 10px;
     padding: $xl-3;
-    background: rgb(192, 90, 255);
     background: $gradient;
-    @include flex(center, space-evenly, none);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .banner-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 70%;
   }
 }
 

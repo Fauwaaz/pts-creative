@@ -1,7 +1,7 @@
 header {
   padding: $s 0;
   border-bottom: 1px solid rgba($white, 0.2);
-  position: sticky;
+  position: sticky !important;
   top: 0;
   background-color: $white;
   z-index: 999;
@@ -170,7 +170,7 @@ nav a {
 
   .dropdown-menu {
     position: relative;
-    top: 190px;
+    top: 200px;
     z-index: 999;
   }
 }
