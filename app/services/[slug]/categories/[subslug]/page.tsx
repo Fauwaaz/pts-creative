@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { services } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/app/components/common/Title";
+import { IoTerminal } from "react-icons/io5";
 
 
 export async function generateStaticParams() {
@@ -17,7 +18,7 @@ export async function generateStaticParams() {
     }
   });
 
-  return params; 
+  return params;
 }
 
 export async function generateMetadata({
@@ -74,7 +75,7 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
   }
 
   return (
-    <section className="heading-title">
+    <section className="heading-title container">
       <TitleSm title={service.title} />
       <p>Categories</p>
       <Title title={service.subCategory?.map((item) => {
@@ -82,6 +83,16 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
           return item.name;
         }
       })} className="title" />
+      {service.subCategory?.map((item, index) => {
+        if (item.slug === subslug) {
+          return (
+            <div key={index}>
+              <h1>{item.desc.map((text) => text.text)}</h1>
+              <p className="desc">{item.paragraph1}</p>
+            </div>
+          )
+        }
+      })}
     </section>
   );
 };

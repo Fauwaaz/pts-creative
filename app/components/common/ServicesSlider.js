@@ -45,7 +45,7 @@ const ServicesSlider = () => {
                                 <Slider {...settings}>
                                     {item.service.map((item, index) => {
                                         return (
-                                            <IconBox data={item} key={index} includes={"Services Includes: "} />
+                                            <IconBox data={item} key={index} includes={"Services Includes: "} path={`${service.slug}/categories`} />
                                         )
                                     })}
                                 </ Slider>

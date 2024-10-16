@@ -72,7 +72,7 @@ const Header = () => {
                 return (
 
                   <ul key={index}>
-                    <li><h3>{item.title}</h3></li>
+                    <li><Link href={item.href} onClick={handleRemove}><h3><strong>{item.title}</strong></h3></Link></li>
                     <li><hr style={{ marginBottom: "5px" }} /></li>
                     <li>
                       <ul style={{listStyle: "circle  "}}>

@@ -24,7 +24,7 @@ const Categories = () => {
         <div className='py'>
             <Title title="Navigate Services" className="title" />
             <br />
-            <Link href="/services" className='button-primary'>To Services &nbsp; <HiOutlineArrowUpRight /></Link>
+            <Link href="/services" className='button-secondary'>To Services &nbsp; <HiOutlineArrowUpRight /></Link>
         </div>
     </section>
   )

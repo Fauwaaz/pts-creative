@@ -1,7 +1,8 @@
-import { AiFillContacts, AiOutlineCalendar } from "react-icons/ai"
+import { AiOutlineCalendar } from "react-icons/ai"
 import { TfiRulerPencil } from "react-icons/tfi"
 import { VscFileSubmodule } from "react-icons/vsc"
-import { BiCalendar, BiEnvelope, BiLogoGoogle, BiPointer, BiSolidReport, BiUser, BiWorld } from "react-icons/bi"
+import { BiAnalyse, BiEnvelope, BiLogoGoogle, BiSolidUser, BiUser, BiWorld } from "react-icons/bi"
+import { HiCursorClick, HiPencilAlt } from "react-icons/hi"
 
 export const home = [
   {
@@ -39,7 +40,7 @@ export const services = [
     h2Desc: "Let our skilled talent unleash the full revenue potential of your business, creating a lucrative success story. Want to find out how we do it?",
     card: [
       {
-        icon: <AiOutlineCalendar size={30} />,
+        icon: <BiSolidUser size={30} />,
         title: "Amazing communication",
       },
       {
@@ -55,7 +56,7 @@ export const services = [
         title: "Identify target audience",
       },
       {
-        icon: <BiUser size={30} />,
+        icon: <BiAnalyse size={30} />,
         title: "Customized Marketing Strategies",
       },
     ],
@@ -65,46 +66,39 @@ export const services = [
         h3: "Our Key Digital Marketing Services",
         service: [
           {
+            slug: "search-engine-optimization",
             icon: <BiLogoGoogle size={40} />,
             title: "Search Engine Optimization (SEO)",
             desc: "Optimize your website for search engines and rank higher on Google. Our tailored SEO strategies improve visibility, enhance organic traffic, and help your business get found by your target audience.",
             serviceInclude: "Keyword research, On-page optimization, Technical SEO, Link building, and Local SEO."
           },
           {
-            icon: <BiPointer size={40} />,
+            slug: "pay-per-click",
+            icon: <HiCursorClick size={40} />,
             title: "Pay-Per-Click (PPC) Advertising",
             desc: "Maximize your return on investment with targeted and data-driven PPC campaigns. We craft ad strategies that target the right audience and deliver quick results.",
             serviceInclude: "Google Ads, Social Media Ads, Display Advertising, and Retargeting."
           },
           {
+            slug: "social-media-marketing",
             icon: <BiWorld size={40} />,
             title: "Social Media Marketing (SMM)",
             desc: "Build a powerful brand presence across popular social platforms. Our social media marketing services are designed to engage your audience, build brand loyalty, and drive traffic to your website.",
             serviceInclude: "Strategy Development, Content Creation, Campaign Management, and Social Media Advertising."
           },
           {
-            icon: <BiCalendar size={40} />,
+            slug: "content-marketing",  
+            icon: <HiPencilAlt size={40} />,
             title: "Content Marketing",
             desc: "Engage your audience with compelling content that not only informs but also converts. Our content marketing team creates impactful blogs, articles, infographics, and videos that align with your brand voice and audience needs.",
             serviceInclude: "Blog Writing, Copywriting, Video Production, and Infographics."
           },
           {
+            slug: "email-marketing",
             icon: <BiEnvelope size={40} />,
             title: "Email Marketing",
             desc: "Nurture leads and convert them into customers with personalized email campaigns. Our email marketing services focus on segmentation, automation, and targeting to ensure your message reaches the right audience at the right time.",
             serviceInclude: "Email Campaign Strategy, Drip Campaigns, Newsletters, and Automated Emails."
-          },
-          {
-            icon: <AiFillContacts size={40} />,
-            title: "Conversion Rate Optimization (CRO)",
-            desc: "Turn your website visitors into paying customers with our CRO services. We analyze user behavior and make data-driven adjustments to enhance the user experience and increase conversion rates.",
-            serviceInclude: "A/B Testing, Landing Page Optimization, and Heatmap Analysis."
-          },
-          {
-            icon: <BiSolidReport size={40} />,
-            title: "Analytics & Reporting",
-            desc: "Gain valuable insights into the performance of your digital campaigns. We provide in-depth analytics and transparent reporting to help you understand what's working and how to improve.",
-            serviceInclude: "Google Analytics Setup, Campaign Tracking, and Custom Reporting."
           },
         ],
         desc: "At PTS Systems & Solutions, we are committed to delivering results through data-driven strategies and innovative solutions. Partner with us to elevate your business and achieve your digital marketing goals."
@@ -114,10 +108,10 @@ export const services = [
       {
         slug: "pay-per-click",
         title: "Pay Per Click (PPC)",
-        name: "Pay Per Click (PPC)",
+        name: "Pay Per Click",
         description: "pay per click",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Pay Per Click (PPC) Services at PTS Systems & Solutions" }],
       },
       {
         slug: "search-engine-optimization",
@@ -125,7 +119,8 @@ export const services = [
         name: "Search Engine Optimization",
         description: "Search Engine Optimization",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Search Engine Optimization Services at PTS Systems & Solutions" }],
+        paragraph1: "In today's competitive digital landscape, achieving top rankings on search engines like Google is critical to your business success. At PTS Systems & Solutions, we offer comprehensive Search Engine Optimization (SEO) services that help businesses in India and globally increase their online visibility, attract high-quality traffic, and drive conversions.Our SEO strategies are tailored to your specific needs, ensuring that your website not only ranks higher but also delivers a great user experience. Whether you're looking to dominate local searches or improve your organic rankings on a national scale, our expert team of SEO professionals will craft a custom strategy designed to achieve your goals." ,
       },
       {
         slug: "social-media-marketing",
@@ -133,7 +128,8 @@ export const services = [
         name: "Social Media Marketing",
         description: "Boost your brand's visibility with expert social media marketing services from PTS Systems & Solutions. Grow your audience, engage customers, and drive conversions.",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Social Media Marketing Servics at PTS Systems & Solutions" }],
+        paragraph1: "In today's digital age, a strong social media presence is essential for businesses looking to connect with their target audience. At PTS Systems & Solutions, we offer comprehensive Social Media Marketing (SMM) services designed to help your brand stand out, engage customers, and drive conversions. As one of India's leading digital marketing agencies, with offices in Mumbai and Pune, we craft tailored social media strategies to meet your unique business goals.Our team of social media experts manages everything from creating engaging content to running highly targeted ad campaigns, ensuring that your brand remains top of mind for your audience.",
       },
       {
         slug: "social-media-optimization",
@@ -141,7 +137,8 @@ export const services = [
         name :"Social Media Optimization",
         description: "Enhance your online presence with PTS Systems & Solutions' expert Social Media Optimization services. Drive engagement, increase visibility, and grow your brand with tailored strategies. Contact us today!",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Social Media Optimization (SMO) Services at PTS Systems & Solutions" }],
+        paragraph1: "In the current digital age, social media has evolved beyond a simple communication tool; it is now a vital platform for businesses to connect with their audience. At PTS Systems & Solutions, we specialize in Social Media Optimization (SMO) services that can transform your online presence and help you effectively reach your target audience.",
       },
       {
         slug: "ecommerce-marketing",
@@ -149,7 +146,8 @@ export const services = [
         name: "E-commerce Marketing",
         description: "Ecommerce Marketing",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Ecommerce Marketing Services at PTS Systems & Solutions" }],
+        paragraph1: "",
       },
       {
         slug: "email-marketing",
@@ -157,7 +155,8 @@ export const services = [
         name: "Email Marketing",
         description: "Email Marketing",
         cover: "/",
-        desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+        desc: [{ text: "Email Marketing Services at PTS Systems & Solutions" }],
+        paragraph1: "",
       },
     ],
   },
@@ -166,7 +165,27 @@ export const services = [
     title: "Web Development",
     description: "Webdevelopment",
     cover: "/website-development.webp",
-    desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet." }],
+    desc: [{ text: "Portray your brand aesthetics on the web / Design and create your brand's presence on the internet."}],
+    subCategory: [
+      {
+        slug: "wordpress-website-development",
+        title: "Wordpress Website Development",
+        name: "Wordpress Website Development",
+        description: "wordpress website development",
+        cover: "/",
+        desc: [{ text: "Wordpress Website Development Services at PTS Systems & Solutions" }],
+        paragraph1: "",
+      },
+      {
+        slug: "php-web-development",
+        title: "PHP Web Development",
+        name: "PHP Web Development",
+        description: "PHP Web Development",
+        cover: "/",
+        desc: [{ text: "PHP Web Development Services at PTS Systems & Solutions" }],
+        paragraph1: "",
+      },
+    ],
   },
   {
     slug: "web-design",
@@ -399,6 +418,7 @@ export const subMenu = [
   {
     "id": 1,
     "title": "Digital Marketing",
+    "href": "/services/digital-marketing",
     "services": [
       {
         "name": "Pay Per Click (PPC)",
@@ -429,96 +449,100 @@ export const subMenu = [
   {
     "id": 2,
     "title": "Website Development",
+    "href": "/services/web-development",
     "services": [
       {
         "name": "Wordpress Website Development",
-        "href": "/"
+        "href": "/services/web-development/categories/wordpress-website-development"
       },
       {
         "name": "PHP Web Development",
-        "href": "/"
+        "href": "/services/web-development/categories/php-web-development"
       },
       {
         "name": "E-commerce Development",
-        "href": "/"
+        "href": "/services/web-development/categories/ecommerce-development"
       },
       {
         "name": "Shopify Website Development",
-        "href": "/"
+        "href": "/services/web-development/categories/shopify-website-development"
       },
       {
         "name": "CMS Development",
-        "href": "/"
+        "href": "/services/web-development/categories/cms-development"
       },
       {
         "name": "CRM Development",
-        "href": "/"
+        "href": "/services/web-development/categories/crm-development"
       }
     ]
   },
   {
     "id": 3,
     "title": "Branding",
+    "href": "/services/branding",
     "services": [
       {
         "name": "Logo Design",
-        "href": "/"
+        "href": "/services/branding/categories/logo-design"
       },
       {
         "name": "UI/UX Design",
-        "href": "/"
+        "href": "/services/branding/categories/ui-ux-design"
       },
       {
         "name": "Packaging Design",
-        "href": "/"
+        "href": "/services/branding/categories/packaging-design"
       },
       {
         "name": "Company Profile Design",
-        "href": "/"
+        "href": "/services/branding/categories/company-profile-design"
       }
     ]
   },
   {
     "id": 4,
     "title": "Videos Creation",
+    "href": "/services/videos-creation",
     "services": [
       {
         "name": "Explainer Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/explainer-videos"
       },
       {
         "name": "Educational Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/educational-videos"
       },
       {
         "name": "Tutorial & How-to Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/tutorial-how-to-videos"
       },
       {
         "name": "Commercial Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/commercial-videos"
       },
       {
         "name": "Whiteboard Animation",
-        "href": "/"
+        "href": "/services/videos-creation/categories/whiteboard-animation"
       },
       {
         "name": "Social Media Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/social-media-videos"
       },
       {
         "name": "Ecommerce Product Videos",
-        "href": "/"
+        "href": "/services/videos-creation/categories/ecommerce-product-videos"
       }
     ]
   },
   {
     "id": 4,
     "title": "Graphic Design",
+    "href": "/services/graphic-design",
     "services": [
       {
         "name": "Social Media Creatives",
-        "href": "/"
+        "href": "/services/graphic-design/categories/social-media-creatives"
       }
     ]
   }

@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const IconBox = ({ data, includes }) => {
+const IconBox = ({ data, includes, path }) => {
     return (
         <>
             <div key={data.index} className="pxy">
@@ -10,7 +10,7 @@ const IconBox = ({ data, includes }) => {
                     <strong>{includes}</strong> 
                     {data.serviceInclude}
                     &nbsp;
-                    <Link href="/" className="blue">Know More</Link>
+                    <Link href={`${path}/${data.slug}`} className="blue">Know More</Link>
                 </span>    
             </div>
         </>

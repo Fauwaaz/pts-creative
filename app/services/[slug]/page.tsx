@@ -54,26 +54,28 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                 </div>
 
                 <div className="py">
-                    <div className="serviceSection2">
-                        <h2>{service.h2}</h2>
-                        <span>{service.h2Desc}</span>
-                        <div className="grid-5 py">
-                            {service && service.card && service.card.map((item, index) => {
-                                return (
-                                    <div key={index} className="box">
-                                        <span className="blue">{item.icon}</span>
-                                        <h3>{item.title}</h3>
-                                    </div>
-                                )
-                            })}
+                    {service.card && (
+                        <div className="serviceSection2">
+                            <h2>{service.h2}</h2>
+                            <span>{service.h2Desc}</span>
+                            <div className="grid-5 py">
+                                {service && service.card && service.card.map((item, index) => {
+                                    return (
+                                        <div key={index} className="box">
+                                            <span className="blue">{item.icon}</span>
+                                            <h3>{item.title}</h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <br />
+                            {service.cta2 && (
+                                <Link href="/contact" className="button-primary">
+                                    {service.cta2}
+                                </Link>
+                            )}
                         </div>
-                        <br />
-                        {service.cta2 && (
-                            <Link href="/contact" className="button-primary">
-                                {service.cta2}
-                            </Link>
-                        )}
-                    </div>
+                    )}
                     {service.serviceSection && (
                         <ServicesSlider />
                     )}
