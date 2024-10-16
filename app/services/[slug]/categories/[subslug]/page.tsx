@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import { services } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/app/components/common/Title";
-import { IoTerminal } from "react-icons/io5";
-
+import BackHistory from "@/app/components/common/BackHistory";
 
 export async function generateStaticParams() {
   const params: { slug: string; subslug: string; }[] = [];
@@ -76,8 +75,11 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
 
   return (
     <section className="heading-title container">
-      <TitleSm title={service.title} />
-      <p>Categories</p>
+      <BackHistory />
+      <TitleSm title={service.title}/>
+      <span className="">Categories</span>
+      <br/>
+      <br/>
       <Title title={service.subCategory?.map((item) => {
         if (item.slug === subslug) {
           return item.name;

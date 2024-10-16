@@ -56,7 +56,6 @@ a {
   color: $dark;
   text-transform: capitalize;
 }
-
 label {
   color: $white;
   font-weight: 600;
@@ -76,6 +75,10 @@ button {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.gap-1{
+  gap: 5px;
 }
 .flex1 {
   display: flex;
