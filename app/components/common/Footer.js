@@ -14,7 +14,6 @@ const TextStyle = {
 }
 
 const Footer = () => {
-  const router = useRouter();
   const date = new Date()
   const year = date.getFullYear()
   return (
