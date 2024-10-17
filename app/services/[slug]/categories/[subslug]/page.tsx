@@ -68,7 +68,7 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
         if (item.slug === subslug) {
           return index;
         }
-      })
+      })  
   );
 
   if (!service) {

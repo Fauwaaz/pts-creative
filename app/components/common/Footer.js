@@ -4,7 +4,6 @@ import Link from "next/link"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { services } from "@/assets/data/services";
-import { useRouter } from "next/navigation";
 
 const TextStyle = {
   fontSize: "16px",
