@@ -4,6 +4,7 @@ import { Title, TitleSm } from "@/app/components/common/Title";
 import BackHistory from "@/app/components/common/BackHistory";
 import Link from "next/link";
 import { HiOutlineArrowDownLeft } from "react-icons/hi2";
+import ServicesBanner from "@/app/components/ServicesBanner";
 
 export async function generateStaticParams() {
   const params: { slug: string; subslug: string; }[] = [];
@@ -93,7 +94,7 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
             <div key={index}>
               <h1>{item.desc.map((text) => text.text)}</h1>
               <p className="desc">{item.paragraph1}</p>
-              <div className="banner text-center">
+              {/* <div className="banner text-center">
                 <div className="container">
                   <div className="banner-content">
                     <h4 className="title-logo">{item.name}</h4>
@@ -107,11 +108,12 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
                     <HiOutlineArrowDownLeft />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           )
         }
       })}
+      <ServicesBanner />
     </section>
   );
 };

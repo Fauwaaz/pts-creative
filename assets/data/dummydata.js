@@ -112,12 +112,6 @@ export const services = [
         description: "pay per click",
         cover: "/",
         desc: [{text: "Pay Per Click (PPC) Services at PTS Systems & Solutions",}],
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
       {
         slug: "search-engine-optimization",
@@ -127,12 +121,6 @@ export const services = [
         cover: "/",
         desc: [{ text: "Search Engine Optimization Services at PTS Systems & Solutions" }],
         paragraph1: "In today's competitive digital landscape, achieving top rankings on search engines like Google is critical to your business success. At PTS Systems & Solutions, we offer comprehensive Search Engine Optimization (SEO) services that help businesses in India and globally increase their online visibility, attract high-quality traffic, and drive conversions.Our SEO strategies are tailored to your specific needs, ensuring that your website not only ranks higher but also delivers a great user experience. Whether you're looking to dominate local searches or improve your organic rankings on a national scale, our expert team of SEO professionals will craft a custom strategy designed to achieve your goals." ,
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
       {
         slug: "social-media-marketing",
@@ -142,12 +130,6 @@ export const services = [
         cover: "/",
         desc: [{ text: "Social Media Marketing Servics at PTS Systems & Solutions" }],
         paragraph1: "In today's digital age, a strong social media presence is essential for businesses looking to connect with their target audience. At PTS Systems & Solutions, we offer comprehensive Social Media Marketing (SMM) services designed to help your brand stand out, engage customers, and drive conversions. As one of India's leading digital marketing agencies, with offices in Mumbai and Pune, we craft tailored social media strategies to meet your unique business goals.Our team of social media experts manages everything from creating engaging content to running highly targeted ad campaigns, ensuring that your brand remains top of mind for your audience.",
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
       {
         slug: "social-media-optimization",
@@ -157,12 +139,6 @@ export const services = [
         cover: "/",
         desc: [{ text: "Social Media Optimization (SMO) Services at PTS Systems & Solutions" }],
         paragraph1: "In the current digital age, social media has evolved beyond a simple communication tool; it is now a vital platform for businesses to connect with their audience. At PTS Systems & Solutions, we specialize in Social Media Optimization (SMO) services that can transform your online presence and help you effectively reach your target audience.",
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
       {
         slug: "ecommerce-marketing",
@@ -172,12 +148,6 @@ export const services = [
         cover: "/",
         desc: [{ text: "Ecommerce Marketing Services at PTS Systems & Solutions" }],
         paragraph1: "",
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
       {
         slug: "email-marketing",
@@ -187,12 +157,6 @@ export const services = [
         cover: "/",
         desc: [{ text: "Email Marketing Services at PTS Systems & Solutions" }],
         paragraph1: "",
-        ctaSection: [
-          {
-            paragraph: "Improve your website's visibility on major search engines like Google. Our expert team uses advanced SEO techniques to help you rank higher, attract more visitors, and increase conversions.",
-            cta: "Get Your Free SEO Audit Today!"
-          },
-        ],
       },
     ],
   },
