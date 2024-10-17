@@ -1,4 +1,4 @@
-import { services } from "@/assets/data/dummydata";
+import { services } from "@/assets/data/services"; 
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Title, TitleSm } from "@/app/components/common/Title";

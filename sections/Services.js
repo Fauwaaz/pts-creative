@@ -1,4 +1,4 @@
-import { services } from "../assets/data/dummydata"
+import { services } from "../assets/data/services"
 import Card from "../app/components/common/Card"
 import { Title, TitleSm } from "../app/components/common/Title"
 

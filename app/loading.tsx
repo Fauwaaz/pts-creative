@@ -10,6 +10,7 @@ function Loading() {
       alignItems: "center"
     }}>
        <span className="loading">Loading...</span>
+       <span className="blue" style={{fontSize: "18px"}}>Please Wait</span>
     </div>
   );
 }

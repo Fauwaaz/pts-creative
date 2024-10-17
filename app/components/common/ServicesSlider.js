@@ -1,6 +1,6 @@
 "use client";
 
-import { services } from "@/assets/data/dummydata";
+import { services } from "@/assets/data/services";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"

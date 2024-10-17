@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { services } from "@/assets/data/services";
+import { useRouter } from "next/navigation";
 
 const TextStyle = {
   fontSize: "16px",
@@ -12,6 +14,7 @@ const TextStyle = {
 }
 
 const Footer = () => {
+  const router = useRouter();
   const date = new Date()
   const year = date.getFullYear()
   return (
@@ -45,30 +48,15 @@ const Footer = () => {
             </ul>
             <ul>
               <li><h3>SERVICES</h3></li>
-              <li>
-                <Link href="/services/digital-marketing">Digital Marketing</Link>
-              </li>
-              <li>
-                <Link href="/services/web-development">Website Development</Link>
-              </li>
-              <li>
-                <Link href="/services/web-design">Website Design</Link>
-              </li>
-              <li>
-                <Link href="/services/mobile-app-development">Mobile App Development</Link>
-              </li>
-              <li>
-                <Link href="/services/strategy-and-branding">Strategy & Branding</Link>
-              </li>
-              <li>
-                <Link href="/services/cloud-hosting">Cloud Hosting</Link>
-              </li>
-              <li>
-                <Link href="/services/web-hosting">Web Hosting</Link>
-              </li>
-              <li>
-                <Link href="/services/agile-methodology">Agile Methodology</Link>
-              </li>
+              {services.map((item, index) => {
+                const href = `/services/${item.slug}`;
+
+                return (
+                  <li key={index}>
+                    <Link href={href}>{item.title}</Link>
+                  </li>
+                );
+              })}
             </ul>
             <ul>
               <li><h3>CONNECT</h3></li>
@@ -76,26 +64,26 @@ const Footer = () => {
                 <ul className="connect text-center">
                   <li>
                     <Link href="#">
-                      <BsFacebook size={25} /> 
-                      <span style={{fontSize: "10px !important"}}>Facebook</span>
+                      <BsFacebook size={25} />
+                      <span style={{ fontSize: "10px !important" }}>Facebook</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="#">
-                      <AiFillInstagram size={25} /> 
-                      <span style={{fontSize: "10px !important"}}>Instagram</span>
+                      <AiFillInstagram size={25} />
+                      <span style={{ fontSize: "10px !important" }}>Instagram</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="#" >
                       <AiFillYoutube size={25} />
-                      <span style={{fontSize: "10px !important"}}>Youtube</span>
+                      <span style={{ fontSize: "10px !important" }}>Youtube</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="#">
-                      <AiFillLinkedin size={25} /> 
-                      <span style={{fontSize: "10px !important"}}>LinkedIn</span>
+                      <AiFillLinkedin size={25} />
+                      <span style={{ fontSize: "10px !important" }}>LinkedIn</span>
                     </Link>
                   </li>
                 </ul>

@@ -1,5 +1,5 @@
 import { Title, TitleSm } from '@/app/components/common/Title'
-import { services } from '@/assets/data/dummydata';
+import { services } from '@/assets/data/services'
 import Link from 'next/link'
 import React from 'react'
 import { HiOutlineArrowUpRight } from 'react-icons/hi2'
