@@ -2,8 +2,6 @@ import { Metadata } from "next";
 import { services } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/app/components/common/Title";
 import BackHistory from "@/app/components/common/BackHistory";
-import Link from "next/link";
-import { HiOutlineArrowDownLeft } from "react-icons/hi2";
 import ServicesBanner from "@/app/components/ServicesBanner";
 
 export async function generateStaticParams() {
