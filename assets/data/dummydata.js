@@ -239,6 +239,10 @@ export const subMenu = [
         "name": "Email Marketing",
         "href": "/services/digital-marketing/categories/email-marketing"
       },
+      {
+        "name": "Content Marketing",
+        "href": "/services/digital-marketing/categories/content-marketing"
+      },
     ]
   },
   {

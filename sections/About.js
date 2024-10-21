@@ -16,7 +16,7 @@ const About = () => {
             <div className='left w-60 py'>
               <h2 className="text-35 text-primary">Company&apos;s Journey</h2>
               <p className='desc-p'>
-                Founded in the heart of India's bustling cities, Mumbai and Pune, <strong>PTS Systems Solutions Pvt. Ltd.</strong> has emerged as a pioneer in the digital marketing sphere. Our journey began with a simple yet profound idea: to empower businesses with innovative digital strategies that drive growth and success. Over the years, we have evolved alongside the digital landscape, continuously adapting to the latest trends and technologies. Our commitment to excellence has established us as a trusted partner for businesses looking to navigate the complexities of online marketing.
+                Founded in the heart of India's bustling cities, Mumbai and Pune, <strong>PTS Systems Solutions Pvt. Ltd.</strong> has emerged as a pioneer in the digital marketing sphere. Our journey began with a simple yet profound idea: to empower businesses with innovative digital strategies that drive growth and success. Over the years, we have evolved alongside the digital landscape, continuously adapting to the latest trends and technologies. Our commitment to excell  ence has established us as a trusted partner for businesses looking to navigate the complexities of online marketing.
               </p>
             </div>
             <div className='right w-40 ml'>

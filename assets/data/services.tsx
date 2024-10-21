@@ -196,7 +196,7 @@ export const services: Service[] = [
                             { text: "Need more customers from your local area?" },
                             { button: "Boost your local SEO now" }
                         ]
-                    },  
+                    },
                     {
                         title: "Content Marketing & SEO",
                         paragraph: "Our team creates engaging, SEO-friendly content that not only ranks well but also resonates with your audience. From blogs and articles to product descriptions and landing pages, we ensure your content drives traffic and converts visitors into customers.",
@@ -212,7 +212,7 @@ export const services: Service[] = [
                             { text: "Want more visibility for your online store?" },
                             { button: "Talk to our Ecommerce SEO experts" }
                         ]
-                    },  
+                    },
                     {
                         title: "SEO Audits & Reporting",
                         paragraph: "We provide comprehensive SEO audits to evaluate your website's current performance and identify areas for improvement. Our detailed reports offer actionable insights and include keyword rankings, traffic analysis, and suggestions to further enhance your SEO strategy.",
@@ -220,7 +220,7 @@ export const services: Service[] = [
                             { text: "Curious about your website's SEO health?" },
                             { button: "Get a free SEO audit today" }
                         ]
-                    },  
+                    },
                 ]
             },
             {
@@ -239,7 +239,65 @@ export const services: Service[] = [
                         button: "Grow Your Social Presence Today!"
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "Our Social Media Marketing Services Include:",
+                servicesIncludes: [
+                    {
+                        title: "Social Media Strategy Development",
+                        paragraph: "We start by understanding your business goals and identifying your target audience. Based on this, we craft a tailored social media strategy that aligns with your brand's message and objectives, ensuring maximum reach and engagement.",
+                        cta: [
+                            { text: "Ready to develop a winning social media strategy?" },
+                            { button: "Contact us today!" }
+                        ]
+                    },
+                    {
+                        title: "Off-Page SEO & Link Building",
+                        paragraph: "We boost your site's authority and trustworthiness through ethical link-building strategies. Our team acquires high-quality backlinks from authoritative websites, increasing your domain authority and improving your rankings in search engines.",
+                        cta: [
+                            { text: "Need authoritative backlinks?" },
+                            { button: "Let's build your off-page SEO strategy" }
+                        ]
+                    },
+                    {
+                        title: "Content Creation & Management",
+                        paragraph: "We create visually appealing and engaging content that resonates with your audience. From social media posts to stories, reels, and ads, our team handles all aspects of content creation and management to maintain consistent brand messaging.",
+                        cta: [
+                            { text: "Need captivating content for your social platforms?" },
+                            { button: " Let's create engaging content for your brand" }
+                        ]
+                    },
+                    {
+                        title: "Paid Social Media Advertising",
+                        paragraph: "Our paid social campaigns across platforms like Facebook, Instagram, LinkedIn, and Twitter are designed to drive targeted traffic and increase your ROI. We manage everything from ad creation, targeting, budgeting, and monitoring for optimal performance.",
+                        cta: [
+                            { text: "Want to boost your brand with paid ads?" },
+                            { button: " Explore our social media advertising solutions" }
+                        ]
+                    },
+                    {
+                        title: "Community Management",
+                        paragraph: "Building a strong community is key to long-term social media success. We manage your social media accounts, engage with your followers, and foster conversations to keep your audience connected and engaged.",
+                        cta: [
+                            { text: "Looking to grow and engage your community?" },
+                            { button: " Let us help with community management" }
+                        ]
+                    },
+                    {
+                        title: "Ecommerce SEO",
+                        paragraph: "For online stores, we offer specialized Ecommerce SEO services designed to increase product visibility, drive traffic, and boost sales. We optimize your product pages, category pages, and site architecture to improve your rankings on search engines.",
+                        cta: [
+                            { text: "Want more visibility for your online store?" },
+                            { button: "Talk to our Ecommerce SEO experts" }
+                        ]
+                    },
+                    {
+                        title: "Social Media Analytics & Reporting",
+                        paragraph: "We provide detailed reports that track your social media performance, measuring key metrics such as reach, engagement, follower growth, and conversions. This data-driven approach allows us to continually optimize your strategy for better results.",
+                        cta: [
+                            { text: "Curious about your social media performance?" },
+                            { button: "Request a detailed report today" }
+                        ]
+                    },
+                ]
             },
             {
                 slug: "social-media-optimization",
@@ -253,11 +311,45 @@ export const services: Service[] = [
                 paragraph1: "In the current digital age, social media has evolved beyond a simple communication tool; it is now a vital platform for businesses to connect with their audience. At PTS Systems & Solutions, we specialize in Social Media Optimization (SMO) services that can transform your online presence and help you effectively reach your target audience.",
                 ctaSection: [
                     {
-                        text: "",
-                        button: ""
-                    },
+                        text: "Embrace the power of social media with PTS Systems & Solutions. Our dedicated team is ready to elevate your online presence and connect you with your audience like never before. Contact us today to learn more about our Social Media Optimization services and how we can help your business grow in the digital world.",
+                        button: "Contact Us Today!"
+                    }
                 ],
-                serviceHeading: ""
+                serviceHeading: "Our Approach",
+                servicesIncludes: [
+                    {
+                        title: "Comprehensive Analysis",
+                        paragraph: "Understanding your current social media presence, competitor strategies, and audience behavior.",
+                        cta: [
+                            { text: "" },
+                            { button: "" }
+                        ]
+                    },
+                    {
+                        title: "Strategy Development",
+                        paragraph: "Crafting a customized SMO strategy that aligns with your business goals and targets your audience effectively.",
+                        cta: [
+                            { text: "" },
+                            { button: "" }
+                        ]
+                    },
+                    {
+                        title: "Content Creation",
+                        paragraph: "Developing high-quality content that reflects your brand voice, including graphics, videos, and written posts.",
+                        cta: [
+                            { text: "" },
+                            { button: "" }
+                        ]
+                    },
+                    {
+                        title: "Monitoring and Reporting",
+                        paragraph: " Regularly tracking the performance of your social media campaigns and providing insightful reports that help you understand the impact of our strategies.",
+                        cta: [
+                            { text: "" },
+                            { button: "" }
+                        ]
+                    },
+                ]
             },
             {
                 slug: "ecommerce-marketing",
@@ -291,6 +383,24 @@ export const services: Service[] = [
                     {
                         text: "Strengthen your brand's authority and attract new customers with valuable content. From blog posts to eBooks, we craft content that informs, engages, and converts.",
                         button: "Explore Our Email Services!"
+                    }
+                ],
+                serviceHeading: ""
+            },
+            {
+                slug: "content-marketing",
+                title: "Content Marketing",
+                name: "Content Marketing",
+                description: "Content Marketing",
+                cover: "/",
+                desc: [{
+                    text: "Content Marketing Services at PTS Systems & Solutions",
+                }],
+                paragraph1: "",
+                ctaSection: [
+                    {
+                        text: "Strengthen your brand's authority and attract new customers with valuable content. From blog posts to eBooks, we craft content that informs, engages, and converts.",
+                        button: "Explore Our Content Services!"
                     }
                 ],
                 serviceHeading: ""

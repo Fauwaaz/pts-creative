@@ -48,10 +48,11 @@ const ContactForm = () => {
     if (!message.trim()) newErrors.message = '* Message is required';
 
     setErrors(newErrors);
-    
+
     const isValid = Object.keys(newErrors).length === 0;
-    if (!isValid) {  
+    if (!isValid) {
       setIsSubmitted(false);
+    } else {
       setFormData({
         name: "",
         email: "",
@@ -60,7 +61,7 @@ const ContactForm = () => {
         message: "",
       });
     }
-  
+
     return validateForm;
   };
 
@@ -97,89 +98,90 @@ const ContactForm = () => {
 
   return (
     <>
-        <form onSubmit={handleSubmit}
-          // action={async (formData) => {
-          //   await sendEmail(formData)
-          // }}
-        >
-          <div className="grid-2">
-            <div className="inputs">
-              <input
-                // name="senderName"
-                placeholder="Name"
-                type="text"
-                id="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                autoComplete="off"
-              />
-              {errors.name && <span className="errors">{errors.name}</span>}
-            </div>
-            <div className="inputs">
-              <input
-                placeholder="Email"
-                type="email"
-                id="email"
-                // name="senderEmail"
-                value={formData.email}
-                onChange={handleInputChange}
-                autoComplete="off"
-              />
-              {errors.email && <span className="errors">{errors.email}</span>}
-            </div>
-          </div>
-
-          <div className="grid-2">
-            <div className="inputs">
-              <input
-                // name="number"
-                placeholder="Contact Number"
-                type="number"
-                id="number"
-                value={formData.number}
-                onChange={handleInputChange}
-                autoComplete="off"
-              />
-              {errors.number && <span className="errors">{errors.number}</span>}
-            </div>
-            <div className="inputs">
-              <input
-                placeholder="Company Name"
-                type="text"
-                id="industry"
-                value={formData.industry}
-                onChange={handleInputChange}
-                autoComplete="off"
-              />
-              {errors.industry && <span className="errors">{errors.industry}</span>}
-            </div>
-          </div>
-
+      <form onSubmit={handleSubmit}
+        // action={async (formData) => {
+        //   await sendEmail(formData)
+        // }}
+      >
+        <div className="grid-2">
           <div className="inputs">
-            <textarea
-              // name="senderMessage"
-              placeholder="Message"
-              id="message"
-              cols={30}
-              rows={1}
-              value={formData.message}
+            <input
+              // name="senderName"
+              placeholder="Name"
+              type="text"
+              id="name"
+              value={formData.name}
               onChange={handleInputChange}
               autoComplete="off"
             />
-            {errors.message && <span className="errors" style={{marginTop:"-8px"}}>{errors.message}</span>}
+            {errors.name && <span className="errors">{errors.name}</span>}
           </div>
-          <button type="submit" className="button-secondary">
-            Send
-          </button>
+          <div className="inputs">
+            <input
+              placeholder="Email"
+              type="email"
+              id="email"
+              // name="senderEmail"
+              value={formData.email}
+              onChange={handleInputChange}
+              autoComplete="off"
+            />
+            {errors.email && <span className="errors">{errors.email}</span>}
+          </div>
+        </div>
 
-          {errors.form && <span className="form-error">{errors.form}</span>}
-        </form>
-        {
-          isSubmitted &&
-            <div className="success">
-              <p className="desc text-center">Thank you! Your message has been successfully submitted.</p>
-            </div>
-        }
+        <div className="grid-2">
+          <div className="inputs">
+            <input
+              // name="senderNumber"
+              placeholder="Contact Number"
+              type="number"
+              id="number"
+              value={formData.number}
+              onChange={handleInputChange}
+              autoComplete="off"
+            />
+            {errors.number && <span className="errors">{errors.number}</span>}
+          </div>
+          <div className="inputs">
+            <input
+              placeholder="Company Name"
+              type="text"
+              id="industry"
+              value={formData.industry}
+              onChange={handleInputChange}
+              autoComplete="off"
+              // name='senderIndustry'
+            />
+            {errors.industry && <span className="errors">{errors.industry}</span>}
+          </div>
+        </div>
+
+        <div className="inputs">
+          <textarea
+            // name="senderMessage"
+            placeholder="Message"
+            id="message"
+            cols={30}
+            rows={1}
+            value={formData.message}
+            onChange={handleInputChange}
+            autoComplete="off"
+          />
+          {errors.message && <span className="errors" style={{ marginTop: "-8px" }}>{errors.message}</span>}
+        </div>
+        <button type="submit" className="button-secondary">
+          Send
+        </button>
+
+        {errors.form && <span className="form-error">{errors.form}</span>}
+      </form>
+      {
+        isSubmitted &&
+        <div className="success">
+          <p className="desc text-center">Thank you! Your message has been successfully submitted.</p>
+        </div>
+      }
     </>
   );
 };
