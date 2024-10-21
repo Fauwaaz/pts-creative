@@ -118,9 +118,9 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
                           item.servicesIncludes.every((data) => data.cta || data.heading || data.paragraph) &&
                           item.servicesIncludes?.map((data, index) => {
                             return (
-                              <div>
+                              <div key={index}>
                                 <ul style={{ listStyle: "circle" }} className="text-left">
-                                  <li key={index}>
+                                  <li>
                                     <p className="desc">{data.paragraph}</p>
                                     {data.cta.every((data) => data.button || data.text) &&
                                       <p className="blue">{data.cta.map((c) => {
