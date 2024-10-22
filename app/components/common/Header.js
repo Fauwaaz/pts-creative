@@ -8,7 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import { BsTriangleFill } from "react-icons/bs";
 import { subMenu } from "@/assets/data/dummydata";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -20,10 +20,10 @@ const Header = () => {
     setActiveLink(router.pathname);
   }, [router.pathname]);
 
- const handleRemove = () => {
+  const handleRemove = () => {
     setShowDropdown(false);
     setOpen(false);
- }
+  }
 
   return (
     <>
@@ -50,7 +50,10 @@ const Header = () => {
             <Link href='/contact' className={activeLink === "/contact" ? "activeLink" : ""}>Contact Us</Link>
             <div onClick={() => setShowDropdown(true)}>
               <Link href='#' className={activeLink === "/services" ? "activeLink" : ""}>
-                Services <BsTriangleFill size={10} style={{ transform: "rotate(180deg)" }} />
+                Services <BsTriangleFill size={10} style={{
+                  transform: showDropdown ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease", 
+                }} />
               </Link>
             </div>
           </nav>
@@ -60,10 +63,10 @@ const Header = () => {
         </div>
         {showDropdown && (
           <motion.div className="dropdown-menu"
-            initial={{opacity: 0, transform: "translateY(0px)"}}
+            initial={{ opacity: 0, transform: "translateY(0px)" }}
             animate={{
               opacity: 1,
-              transition: {duration: 0.3, transform: "translateY(-8px)"}
+              transition: { duration: 0.3, transform: "translateY(-8px)" }
             }}
             onMouseMove={() => setShowDropdown(true)}
           >
@@ -75,7 +78,7 @@ const Header = () => {
                     <li><Link href={item.href} onClick={handleRemove}><h3><strong>{item.title}</strong></h3></Link></li>
                     <li><hr style={{ marginBottom: "5px" }} /></li>
                     <li>
-                      <ul style={{listStyle: "circle  "}}>
+                      <ul style={{ listStyle: "circle  " }}>
                         {item.services.map((subItem, index) => {
                           return (
                             <li key={index}>

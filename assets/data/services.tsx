@@ -34,6 +34,7 @@ interface SubCategory {
     paragraph1?: string;
     servicesIncludes?: ServiceInclude[];
     serviceHeading: string;
+    whyPtsSection:{heading: string; whyList: {id: number; title: string; desc: string}[]}[];
 }
 
 interface Service {
@@ -145,7 +146,8 @@ export const services: Service[] = [
                         button: "Launch Your PPC Campaign Now!"
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "search-engine-optimization",
@@ -219,6 +221,33 @@ export const services: Service[] = [
                         cta: [
                             { text: "Curious about your website's SEO health?" },
                             { button: "Get a free SEO audit today" }
+                        ]
+                    },
+                ],
+                whyPtsSection: [
+                    {
+                        heading: "Why Choose PTS Systems & Solutions for SEO?",
+                        whyList: [
+                            {
+                                id: 1,
+                                title: "Proven Results:",
+                                desc: "We deliver SEO strategies that result in sustained growth in organic traffic and search rankings.",
+                            },
+                            {
+                                id: 2,
+                                title: "Tailored Strategies:",
+                                desc: "No two businesses are alike. We create a custom SEO plan that aligns with your unique business goals.",
+                            },
+                            {
+                                id: 3,
+                                title: "Experienced Team:",
+                                desc: "Our SEO professionals have years of experience working with clients across various industries, ensuring you get the best expertise.",
+                            },
+                            {
+                                id: 4,
+                                title: "Transparent Reporting:",
+                                desc: "With regular, easy-to-understand reports, you'll always know how your SEO campaign is performing and the next steps for improvement.",
+                            },
                         ]
                     },
                 ]
@@ -297,6 +326,33 @@ export const services: Service[] = [
                             { button: "Request a detailed report today" }
                         ]
                     },
+                ],
+                whyPtsSection: [
+                    {
+                        heading: "Why Choose PTS Systems & Solutions for Social Media Marketing?",
+                        whyList: [
+                            {
+                                id: 1,
+                                title: "Custom Strategies:",
+                                desc: "We create tailored social media plans designed to meet your business goals.",
+                            },
+                            {
+                                id: 2,
+                                title: "Multi-Platform Expertise:",
+                                desc: " Our team is experienced in managing social media campaigns across all major platforms including Facebook, Instagram, LinkedIn, and more.",
+                            },
+                            {
+                                id: 3,
+                                title: "Engagement-Focused:",
+                                desc: "We focus on creating content that not only attracts followers but also encourages meaningful engagement and customer loyalty.",
+                            },
+                            {
+                                id: 4,
+                                title: "Proven Results:",
+                                desc: "We deliver campaigns that generate real results, from growing your audience to increasing website traffic and conversions.",
+                            },
+                        ]
+                    },
                 ]
             },
             {
@@ -349,7 +405,39 @@ export const services: Service[] = [
                             { button: "" }
                         ]
                     },
-                ]
+                ],
+                whyPtsSection: [
+                    {
+                        heading: "Why Social Media Optimization?",
+                        whyList: [
+                            {
+                                id: 1,
+                                title: "Increased Visibility:",
+                                desc: "Our team will optimize your social media profiles to ensure they are easily discoverable. By enhancing keywords, descriptions, and visuals, we help your brand capture attention quickly.",
+                            },
+                            {
+                                id: 2,
+                                title: "Enhanced Engagement:",
+                                desc: " Social media is all about interaction. We create engaging content tailored to your audience, ensuring your posts resonate and encourage shares, likes, and comments. This builds a loyal community around your brand.",
+                            },
+                            {
+                                id: 3,
+                                title: "Data-Driven Strategies:",
+                                desc: "Using advanced analytics tools, we monitor your social media performance and adjust strategies accordingly. Our data-driven approach allows us to optimize your campaigns for maximum reach and engagement.",
+                            },
+                            {
+                                id: 4,
+                                title: "Targeted Campaigns",
+                                desc: "Every business is unique, and so are its customers. We design targeted campaigns that align with your goals, whether it's brand awareness, lead generation, or community building.",
+                            },
+                            {
+                                id: 5,
+                                title: "Consistency Across Platforms",
+                                desc: "We ensure that your brand message is consistent across all social media channels, from Facebook and Instagram to LinkedIn and Twitter. This consistency helps build brand trust and recognition.",
+                            },
+                        ]
+                    },
+                ],
             },
             {
                 slug: "ecommerce-marketing",
@@ -367,7 +455,8 @@ export const services: Service[] = [
                         button: ""
                     },
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "email-marketing",
@@ -385,7 +474,8 @@ export const services: Service[] = [
                         button: "Explore Our Email Services!"
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "content-marketing",
@@ -403,7 +493,8 @@ export const services: Service[] = [
                         button: "Explore Our Content Services!"
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
         ],
     },
@@ -430,7 +521,8 @@ export const services: Service[] = [
                         button: "Start Your Website Project!"
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "php-web-development",
@@ -448,7 +540,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "ecommerce-development",
@@ -466,7 +559,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "shopify-website-development",
@@ -484,7 +578,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "cms-development",
@@ -502,7 +597,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "crm-development",
@@ -520,7 +616,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
         ],
         h1: "",
@@ -554,7 +651,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "ui-ux-design",
@@ -572,7 +670,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "packaging-design",
@@ -590,7 +689,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "company-profile-design",
@@ -608,7 +708,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
         ],
         h1: "",
@@ -642,7 +743,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "educational-videos",
@@ -660,7 +762,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "tutorial-how-to-videos",
@@ -678,7 +781,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "commercial-videos",
@@ -696,7 +800,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "whiteboard-animation",
@@ -714,7 +819,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "social-media-videos",
@@ -732,7 +838,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
             {
                 slug: "ecommerce-product-videos",
@@ -750,7 +857,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             },
         ],
         h1: "",
@@ -784,7 +892,8 @@ export const services: Service[] = [
                         button: ""
                     }
                 ],
-                serviceHeading: ""
+                serviceHeading: "",
+                whyPtsSection: []
             }
         ],
         h1: "",

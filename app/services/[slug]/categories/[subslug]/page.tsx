@@ -4,6 +4,7 @@ import BackHistory from "@/app/components/common/BackHistory";
 import { services } from "@/assets/data/services";
 import Link from "next/link";
 import { HiOutlineArrowDownLeft } from "react-icons/hi2";
+import WhySection from "@/app/components/common/WhySection";
 
 export async function generateStaticParams() {
   const params: { slug: string; subslug: string; }[] = [];
@@ -76,91 +77,95 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
   }
 
   return (
-      <section className="heading-title container">
-        <BackHistory />
-        <TitleSm title={service.title} />
-        <span className="">Categories</span>
-        <br />
-        <br />
-        <Title title={service.subCategory?.map((item) => {
-          if (item.slug === subslug) {
-            return item.name;
-          }
-        })} className="title" />
-        {service.subCategory?.map((item) => {
-          if (item.slug === subslug) {
-            return (
-              <>
-                <h1>{item.desc.map((text) => text.text)}</h1>
-                <p className="desc">{item.paragraph1}</p>
-              </>
-            )
-          }
-        })}
+    <section className="heading-title container">
+      <BackHistory />
+      <TitleSm title={service.title} />
+      <span className="">Categories</span>
+      <br />
+      <br />
+      <Title title={service.subCategory?.map((item) => {
+        if (item.slug === subslug) {
+          return item.name;
+        }
+      })} className="title" />
+      {service.subCategory?.map((item) => {
+        if (item.slug === subslug) {
+          return (
+            <>
+              <h1>{item.desc.map((text) => text.text)}</h1>
+              <p className="desc">{item.paragraph1}</p>
+            </>
+          )
+        }
+      })}
 
-        {service.subCategory?.map((item, index) => {
-          if (item.slug === subslug) {
-            return (
-              <div key={index}>
-                {service.serviceSection &&
-                  service.serviceSection.length > 0 &&
-                  item.name &&
-                  item.ctaSection &&
-                  item.ctaSection.length > 0 &&
-                  item.ctaSection.every((cta) => cta.text || cta.button) &&
-                  item.servicesIncludes &&
-                  item.servicesIncludes.length > 0 &&
-                  (
-                    <>
-                      <div>
-                        <h3 className="title">{item.serviceHeading}</h3>
-                        {item.servicesIncludes.length > 0 &&
-                          item.servicesIncludes.every((data) => data.cta || data.heading || data.paragraph) &&
-                          item.servicesIncludes?.map((data, index) => {
-                            return (
-                              <div key={index}>
-                                <ul style={{ listStyle: "circle" }} className="text-left">
-                                  <li>
-                                    <p className="desc">{data.paragraph}</p>
-                                    {data.cta.every((data) => data.button || data.text) &&
-                                      <p className="blue">{data.cta.map((c) => {
-                                        return (
-                                          <>
-                                            <span className="desc-p">- {c.text}</span> &nbsp;
-                                            <Link href="/contact" className="blue">{c.button}</Link>
-                                          </>
-                                        )
-                                      })}</p>
-                                    }
-                                  </li>
-                                </ul>
-                              </div>
-                            )
-                          })}
-                        <div className="banner text-center">
-                          <div className="container">
-                            <div className="banner-content">
-                              <h4 className="title-logo">{item.name}</h4>
-                              <span className="desc" style={{ color: "white" }}>
-                                {item.ctaSection?.map((p) => p.text)}
-                              </span>
+      {service.subCategory?.map((item, index) => {
+        if (item.slug === subslug) {
+          return (
+            <div key={index}>
+              {service.serviceSection &&
+                service.serviceSection.length > 0 &&
+                item.name &&
+                item.ctaSection &&
+                item.ctaSection.length > 0 &&
+                item.ctaSection.every((cta) => cta.text || cta.button) &&
+                item.servicesIncludes &&
+                item.servicesIncludes.length > 0 &&
+                item.whyPtsSection.length > 0 &&
+                item.whyPtsSection.every((list) => list.heading || list.whyList) &&
+                (
+                  <>
+                    <WhySection slug={item.slug}/>
+                    <div>
+                      <h3 className="title">{item.serviceHeading}</h3>
+                      {item.servicesIncludes.length > 0 &&
+                        item.servicesIncludes.every((data) => data.cta || data.heading || data.paragraph) &&
+                        item.servicesIncludes?.map((data, index) => {
+                          return (
+                            <div key={index}>
+                              <ul style={{ listStyle: "circle" }} className="text-left">
+                                <li>
+                                  <p className="desc">{data.paragraph}</p>
+                                  {data.cta.every((data) => data.button || data.text) &&
+                                    <p className="blue">{data.cta.map((c) => {
+                                      return (
+                                        <>
+                                          <span className="desc-p">- {c.text}</span> &nbsp;
+                                          <Link href="/contact" className="blue">{c.button}</Link>
+                                        </>
+                                      )
+                                    })}</p>
+                                  }
+                                </li>
+                              </ul>
                             </div>
-                            <br />
-                            <Link href="/contact" className="button-primary">
-                              {item.ctaSection?.map((c) => c.button)} &nbsp;
-                              <HiOutlineArrowDownLeft />
-                            </Link>
+                          )
+                        })}
+
+                      <div className="banner text-center">
+                        <div className="container">
+                          <div className="banner-content">
+                            <h4 className="title-logo">{item.name}</h4>
+                            <span className="desc" style={{ color: "white" }}>
+                              {item.ctaSection?.map((p) => p.text)}
+                            </span>
                           </div>
+                          <br />
+                          <Link href="/contact" className="button-primary">
+                            {item.ctaSection?.map((c) => c.button)} &nbsp;
+                            <HiOutlineArrowDownLeft />
+                          </Link>
                         </div>
                       </div>
-                    </>
-                  )
-                }
-              </div>
-            )
-          }
-        })}
-      </section>
+                    </div>
+                  </>
+                )
+              }
+            </div>
+          )
+        }
+      })}
+    </section>
   );
 };
 
