@@ -29,8 +29,8 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PTS Digital Marketing",
-  description: "Digital Marketing Agency",
+  title: "Digital Marketing Agency in India | PTS Systems & Solutions Pvt. Ltd.",
+  description: "Unlock your business’s potential with PTS Systems & Solutions Pvt. Ltd., a leading digital marketing agency in India. We offer comprehensive services, including SEO, PPC, social media marketing, content creation, and email marketing, designed to generate 3x faster revenue growth. Partner with us today to transform your brand into a powerful sales engine.",
   robots: "index, follow",
 };
 
