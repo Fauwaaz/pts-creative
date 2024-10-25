@@ -127,7 +127,7 @@ const SubServicePage = ({ params }: { params: { slug: string, subslug: string } 
                                 <li>
                                   <p className="desc">{data.paragraph}</p>
                                   {data.cta.every((data) => data.button || data.text) &&
-                                    <p className="blue">{data.cta.map((c) => {
+                                    <p key={index} className="blue">{data.cta.map((c) => {
                                       return (
                                         <>
                                           <span className="desc-p">- {c.text}</span> &nbsp;
