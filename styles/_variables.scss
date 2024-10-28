@@ -85,3 +85,10 @@ p {
 .mr {
   margin-left: 50px;
 }
+
+
+@media screen and (max-width: 800px) {
+  .ml {
+    margin-left: 0px;
+  }
+}

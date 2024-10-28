@@ -436,6 +436,11 @@ footer {
   }
 }
 
+.about-img {
+  height: auto;
+  width: 450px;
+}
+
 @media screen and (max-width: 800px) {
   .banner {
     .container {
@@ -473,6 +478,11 @@ footer {
     .right {
       padding: $xl-3;
     }
+  }
+
+  .about-img {
+    height: auto;
+    width: 300px;
   }
 
   .blog-card {

@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className='right w-40 ml'>
               <Image
-                className="round"
+                className="round about-img"
                 src={'/journey.webp'}
                 alt={'/journey.webp'}
                 width={450}
@@ -33,7 +33,7 @@ const About = () => {
           <div className='content flex'>
             <div className='left w-35 py'>
               <Image
-                className="round"
+                className="round about-img"
                 src={'/goals.webp'}
                 alt={'/goals.webp'}
                 width={450}
