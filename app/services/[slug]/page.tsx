@@ -54,7 +54,7 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                 </div>
 
                 <div className="py">
-                    {service.card && (
+                    {service.card && service.card.length > 0 && (
                         <div className="serviceSection2">
                             <h2>{service.h2}</h2>
                             <span>{service.h2Desc}</span>
@@ -76,7 +76,7 @@ const SingleService = ({ params }: { params: { slug: string } }) => {
                             )}
                         </div>
                     )}
-                    {service.serviceSection && (
+                    {service.serviceSection && service.serviceSection.length > 0 && (
                         <ServicesSlider />
                     )}
                 </div>

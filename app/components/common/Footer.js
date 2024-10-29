@@ -61,25 +61,25 @@ const Footer = () => {
               <li>
                 <ul className="connect text-center">
                   <li>
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/PTSSystemsSolutions/">
                       <BsFacebook size={25} />
                       <span style={{ fontSize: "10px !important" }}>Facebook</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
+                    <Link href="https://www.instagram.com/pts.sap/">
                       <AiFillInstagram size={25} />
                       <span style={{ fontSize: "10px !important" }}>Instagram</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" >
+                    <Link href="https://www.youtube.com/channel/UCXS1VQAAj42tUyPPt3h7OiQ" >
                       <AiFillYoutube size={25} />
                       <span style={{ fontSize: "10px !important" }}>Youtube</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
+                    <Link href="https://www.linkedin.com/company/ptssystemsandsolutions">
                       <AiFillLinkedin size={25} />
                       <span style={{ fontSize: "10px !important" }}>LinkedIn</span>
                     </Link>
