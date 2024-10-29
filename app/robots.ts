@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/'],
       },
     ],
-    sitemap: 'https://localhost:3000/sitemap.xml',
+    sitemap: 'https://digital.ptssystems.co.in/sitemap.xml',
   }
 }

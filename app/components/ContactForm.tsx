@@ -6,7 +6,8 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
-  const emailRegex = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F]|\\[\x01-\x09\x0B\x0C\x0E-\x1F\x21-\x5A\x5E-\x7F])*")@(?:(?:[a-z0-9](?:[a-z0-9-][a-z0-9])*\.)+[a-z0-9](?:[a-z0-9-][a-z0-9])*)$/;
+  const emailRegex = /^(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*)@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;

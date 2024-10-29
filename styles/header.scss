@@ -146,8 +146,7 @@ nav a {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-      z-index: 999;
-      justify-content: center;
+      z-index: -10;
 
       a {
         width: 100%;
@@ -172,5 +171,7 @@ nav a {
     position: relative;
     top: 200px;
     z-index: 999;
+    height: 200px;
+    overflow-y: scroll;
   }
 }
